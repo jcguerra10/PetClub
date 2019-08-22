@@ -1,5 +1,6 @@
 package model;
 
+import java.io.*;
 import java.util.ArrayList;
 
 public class Club {
@@ -65,8 +66,7 @@ public class Club {
 
 	@Override
 	public String toString() {
-		return "Club [id=" + id + ", name=" + name + ", date=" + date + ", mascotType=" + mascotType + ", owners="
-				+ owners + "]";
+		return "Club [id=" + id + ", name=" + name + ", date=" + date + ", mascotType=" + mascotType;
 	}
 
 	public void setOwners(ArrayList<Owner> owners) {
@@ -76,23 +76,46 @@ public class Club {
 	// METHODS
 
 	public void generateListOwners() {
-
+		
+	}
+	
+	public void ownerRegister(Owner newOwner) {
+		owners.add(newOwner);
+		try {
+			
+			ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/OWNERS.txt"));
+			
+			writeFile.writeObject(owners);
+			
+			writeFile.close();
+			
+		} catch (Exception e) {
+			System.out.println("ERROR: No se ha encontrado Archivo");
+		}
+	}
+	
+	public String getListOwners() {
+		String msg = "";
+		for (int i = 0; i < owners.size(); i++) {
+			msg += i +") "+ owners.get(i).getName() +"\n";
+		}
+		return msg;
 	}
 
-	public void ownerRegister() {
-
-	}
-
-	public void petRegister() {
-
+	public void petRegister(Pet newPet, int indexOwner) {
+		owners.get(indexOwner).petRegister(newPet);
 	}
 
 	public void eliminateOwner(int owner) {
-
+		
 	}
 
 	public void eliminatePet(int owner, int pet) {
 
+	}
+	
+	public String petList(int indexOwner) {
+		return owners.get(indexOwner).petList();
 	}
 
 }

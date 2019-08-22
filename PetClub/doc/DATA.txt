@@ -1,1 +1,1 @@
-Club [id=10221235, name=Pets, date=19/8/2019, mascotType=Perros, owners=[]]
+0) Club [id=102156, name=Juanchio, date=16/8/2019, mascotType=Perro

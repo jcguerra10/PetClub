@@ -1,5 +1,7 @@
 package model;
 
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -75,11 +77,33 @@ public class Owner implements Serializable {
 	
 	//
 	
-	public void petRegister() {
-		
+	public void petRegister(Pet newPet) {
+		pets.add(newPet);
+		try {
+			
+			ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/PETS.txt"));
+			
+			writeFile.writeObject(pets);
+			
+			writeFile.close();
+			
+		} catch (Exception e) {
+			System.out.println("ERROR: No se ha encontrado Archivo");
+		}
 	}
 	
 	public void eliminatePet(int pet) {
+		
+	}
+	
+	public String petList() {
+		String msg = "";
+		
+		for (int i = 0; i < pets.size(); i++) {
+			msg += i+") "+pets.get(i).getName();
+		}
+		
+		return msg;
 		
 	}
 	
