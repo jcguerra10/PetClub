@@ -3,6 +3,8 @@ package model;
 import java.io.*;
 import java.util.ArrayList;
 
+import exceptions.NotFoundException;
+
 public class InfoClubs {
 
 	private ArrayList<Club> clubs;
@@ -22,7 +24,7 @@ public class InfoClubs {
 
 			String nClub = "";
 			for (int i = 0; i < clubs.size(); i++) {
-				nClub = i+") " + clubs.get(i);
+				nClub = "" + clubs.get(i);
 				bufferW.write(nClub);
 				bufferW.newLine();
 			}
@@ -34,9 +36,9 @@ public class InfoClubs {
 		}
 
 	}
-	
+
 	public void generateLists() {
-		
+
 	}
 
 	public void ownerRegister(int club, Owner newOwner) {
@@ -47,16 +49,42 @@ public class InfoClubs {
 		clubs.get(indexClub).petRegister(newPet, indexOwner);
 	}
 
-	public void eliminateClub(int club) {
+	public void eliminateClub(String identification) throws NotFoundException {
+		boolean exit = false;
+		for (int k = 0; k < clubs.size() || !exit; k++) {
+			int comp = k + 1;
 
+			try {
+				if (identification.equals(clubs.get(k).getName()) || identification.equals(clubs.get(k).getId())) {
+					clubs.remove(k);
+					FileWriter entry = new FileWriter("D:\\AAPROGRAMAS\\apo2\\LAB2\\PetClub\\PetClub\\doc\\DATA.txt");
+
+					BufferedWriter bufferW = new BufferedWriter(entry);
+
+					String nClub = "";
+					for (int i = 0; i < clubs.size(); i++) {
+						nClub = i + ") " + clubs.get(i);
+						bufferW.write(nClub);
+						bufferW.newLine();
+					}
+
+					bufferW.close();
+					exit = true;
+				} else if (comp == clubs.size()) {
+					new NotFoundException().printStackTrace();
+				}
+			} catch (Exception e) {
+				
+			}
+		}
 	}
 
 	public void eliminateOwner(int club, int owner) {
-
+		clubs.get(club).eliminateOwner(owner);
 	}
 
-	public void eliminatePet(int club, int owner, int pet) {
-
+	public void eliminatePet(int club, int owner, String pet) {
+		clubs.get(club).eliminatePet(owner, pet);
 	}
 
 	public ArrayList<Club> getClubs() {
@@ -70,15 +98,21 @@ public class InfoClubs {
 	public String getListClubs() {
 		String msg = "";
 		for (int i = 0; i < clubs.size(); i++) {
-			msg += i +") "+clubs.get(i).getName() +"\n";
+			msg += i + ") " + clubs.get(i).getName() + "\n";
 		}
 		return msg;
 	}
+
 	public String getListOwners(int indexClub) {
 		return clubs.get(indexClub).getListOwners();
 	}
-	
+
 	public String petList(int indexClub, int indexOwner) {
 		return clubs.get(indexClub).petList(indexOwner);
+	}
+	
+	public void exportClubs() {
+		
+		            
 	}
 }

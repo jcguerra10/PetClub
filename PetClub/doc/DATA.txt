@@ -1,1 +1,2 @@
 0) Club [id=102156, name=Juanchio, date=16/8/2019, mascotType=Perro
+1) Club [id=123, name=123, date=12/2/2222, mascotType=perro

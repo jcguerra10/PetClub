@@ -76,28 +76,29 @@ public class Club {
 	// METHODS
 
 	public void generateListOwners() {
-		
+
 	}
-	
+
 	public void ownerRegister(Owner newOwner) {
 		owners.add(newOwner);
 		try {
-			
-			ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/OWNERS.txt"));
-			
+
+			ObjectOutputStream writeFile = new ObjectOutputStream(
+					new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/owners" + getId() + ".txt"));
+
 			writeFile.writeObject(owners);
-			
+
 			writeFile.close();
-			
+
 		} catch (Exception e) {
 			System.out.println("ERROR: No se ha encontrado Archivo");
 		}
 	}
-	
+
 	public String getListOwners() {
 		String msg = "";
 		for (int i = 0; i < owners.size(); i++) {
-			msg += i +") "+ owners.get(i).getName() +"\n";
+			msg += i + ") " + owners.get(i).getName() + "\n";
 		}
 		return msg;
 	}
@@ -107,15 +108,47 @@ public class Club {
 	}
 
 	public void eliminateOwner(int owner) {
-		
+		owners.remove(owner);
+		try {
+
+			ObjectOutputStream writeFile = new ObjectOutputStream(
+
+					new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/owners" + getId() + ".txt"));
+
+			writeFile.writeObject(owners);
+
+			writeFile.close();
+
+		} catch (Exception e) {
+			System.out.println("ERROR: No se ha encontrado Archivo");
+		}
 	}
 
-	public void eliminatePet(int owner, int pet) {
-
+	public void eliminatePet(int owner, String id) {
+		owners.get(owner).eliminatePet(id);
 	}
-	
+
 	public String petList(int indexOwner) {
 		return owners.get(indexOwner).petList();
+	}
+
+	public void export() {
+		try {
+			ArrayList<Owner> export = null;
+			ObjectInputStream exportFile = new ObjectInputStream(
+			new FileInputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/owners" + getId() + ".txt"));
+			
+			export = (ArrayList<Owner>) exportFile.readObject();
+			
+			for (int i = 0; i < export.size(); i++) {
+				owners.add(export.get(i));
+			}
+			
+			exportFile.close();
+
+		} catch (Exception e) {
+			
+		}
 	}
 
 }

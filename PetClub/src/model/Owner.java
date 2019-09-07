@@ -1,9 +1,13 @@
 package model;
 
+import java.io.BufferedWriter;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+
+import exceptions.NotFoundException;
 
 public class Owner implements Serializable {
 	private String id;
@@ -81,7 +85,7 @@ public class Owner implements Serializable {
 		pets.add(newPet);
 		try {
 			
-			ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/PETS.txt"));
+			ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets"+getId()+".txt"));
 			
 			writeFile.writeObject(pets);
 			
@@ -92,8 +96,28 @@ public class Owner implements Serializable {
 		}
 	}
 	
-	public void eliminatePet(int pet) {
-		
+	public void eliminatePet(String id) {
+		boolean exit = false;
+		for (int k = 0; k < pets.size() || !exit; k++) {
+			int comp = k + 1;
+
+			try {
+				if (id.equals(pets.get(k).getName()) || id.equals(pets.get(k).getId())) {
+					pets.remove(k);
+					ObjectOutputStream writeFile = new ObjectOutputStream(
+					new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets" + pets.get(k).getId() + ".txt"));
+
+					writeFile.writeObject(pets);
+
+					writeFile.close();
+					exit = true;
+				} else if (comp == pets.size()) {
+					new NotFoundException().printStackTrace();
+				}
+			} catch (Exception e) {
+				
+			}
+		}
 	}
 	
 	public String petList() {
@@ -105,6 +129,16 @@ public class Owner implements Serializable {
 		
 		return msg;
 		
+	}
+	
+	public int counterPets() {
+		int counter = 0;
+		
+		for (int i = 0; i < pets.size(); i++) {
+			++counter;
+		}
+		
+		return counter;
 	}
 	
 	

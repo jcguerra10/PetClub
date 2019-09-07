@@ -2,6 +2,7 @@ package ui;
 
 import java.util.Scanner;
 
+import exceptions.NotFoundException;
 import model.*;
 
 public class Menu {
@@ -33,11 +34,34 @@ public class Menu {
                 case (2):
                 	addOwner();
                 	System.out.println("Agregado con exito \n");
+                break;	
                 case (3):
                 	addPet();
                 	System.out.println("Agregado con exito \n");
+                case (4):
+                	eliminateClub();              
+               	break;
+                case (5):
+                	eliminateOwner();
+                	System.out.println("Eliminado con exito \n");
+                break;
+                case (6):
+                	eliminatePet();
+                break;
             }
         }
+	}
+
+	private static void eliminateClub() {
+		System.out.print("Digite el codigo o el nombre del Club: ");
+		String identification = scanStr.nextLine();
+		try {
+			infoSis.eliminateClub(identification);
+		} catch (NotFoundException e) {
+			
+		}
+		
+		
 	}
 
 	private static void addNewClub() {
@@ -89,6 +113,15 @@ public class Menu {
 		infoSis.ownerRegister(indexClub, newOwner);
 	}
 	
+	public static void eliminateOwner() {
+		System.out.println(infoSis.getListClubs());
+		int indexClub = scanInt.nextInt();
+		System.out.println(infoSis.getListOwners(indexClub));
+		int indexOwner = scanInt.nextInt();
+		
+		infoSis.eliminateOwner(indexClub, indexOwner);
+	}
+	
 	public static void addPet() {
 		
 		System.out.println(infoSis.getListClubs());
@@ -124,12 +157,26 @@ public class Menu {
 
 		infoSis.petRegister(indexClub, newPet, indexOwner);
 	}
+	
+	public static void eliminatePet() {
+		System.out.println(infoSis.getListClubs());
+		int indexClub = scanInt.nextInt();
+		System.out.println(infoSis.getListOwners(indexClub));
+		int indexOwner = scanInt.nextInt();
+		System.out.println(infoSis.petList(indexClub, indexOwner));
+		String idPet = scanInt.nextLine();
+		
+		infoSis.eliminatePet(indexClub, indexOwner, idPet);
+	}
 
 	public static void msg() {
 		System.out.println("BIENVENIDO");
 		System.out.println("1. Agregar un nuevo Club");
-		System.out.println("2. Agregar un nuevo Dueño");
+		System.out.println("2. Agregar un nuevo Duenio");
 		System.out.println("3. Agregar una nueva Mascota");
+		System.out.println("4. Eliminar Club");
+		System.out.println("5. Eliminar Duenio");
+		System.out.println("6. Eliminar Mascota");
 
 	}
 
