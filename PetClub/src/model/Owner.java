@@ -1,15 +1,11 @@
 package model;
 
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-import java.util.ArrayList;
+import java.io.*;
+import java.util.*;
 
 import exceptions.NotFoundException;
 
-public class Owner implements Serializable {
+public class Owner implements Serializable, Comparable<Owner>{
 	private String id;
 
 	private String name;
@@ -29,6 +25,7 @@ public class Owner implements Serializable {
 		this.birthday = birthday;
 		this.petType = petType;
 		pets = new ArrayList<Pet>();
+		importPets();
 	}
 
 	public String getId() {
@@ -105,7 +102,7 @@ public class Owner implements Serializable {
 				if (id.equals(pets.get(k).getName()) || id.equals(pets.get(k).getId())) {
 					pets.remove(k);
 					ObjectOutputStream writeFile = new ObjectOutputStream(
-					new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets" + pets.get(k).getId() + ".txt"));
+					new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets"+ getId()+".txt"));
 
 					writeFile.writeObject(pets);
 
@@ -131,14 +128,41 @@ public class Owner implements Serializable {
 		
 	}
 	
-	public int counterPets() {
-		int counter = 0;
-		
-		for (int i = 0; i < pets.size(); i++) {
-			++counter;
+	public void importPets() {
+		try {
+			ArrayList<Pet> export = null;
+			ObjectInputStream exportFile = new ObjectInputStream(
+			new FileInputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/owners" + getId() + ".txt"));
+			
+			ArrayList<Pet> readObject = (ArrayList<Pet>) exportFile.readObject();
+			export = readObject;
+			
+			for (int i = 0; i < export.size(); i++) {
+				pets.add(export.get(i));
+			}
+			
+			exportFile.close();
+
+		} catch (Exception e) {
+			
 		}
-		
-		return counter;
+	}
+	
+	public int counterPets() {		
+		return pets.size();
+	}
+
+	@Override
+	public int compareTo(Owner o) {
+		int comp = 0;
+		if (counterPets()<o.counterPets()) {
+			comp = -1;
+		}else if (counterPets()>o.counterPets()) {
+			comp = 1;
+		}else if (counterPets() == o.counterPets()) {
+			comp = 0;
+		}
+		return comp;
 	}
 	
 	

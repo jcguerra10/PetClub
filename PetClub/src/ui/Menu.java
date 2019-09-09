@@ -8,7 +8,6 @@ import model.*;
 public class Menu {
 
 	private static Scanner scanStr;
-	private static Scanner scanDou;
 	private static Scanner scanInt;
 
 	private static InfoClubs infoSis;
@@ -18,7 +17,6 @@ public class Menu {
 		infoSis = new InfoClubs();
 		
 		scanStr = new Scanner(System.in);
-	    scanDou = new Scanner(System.in);
 	    scanInt = new Scanner(System.in);
 	    
 		boolean exit = false;
@@ -38,6 +36,7 @@ public class Menu {
                 case (3):
                 	addPet();
                 	System.out.println("Agregado con exito \n");
+                break;
                 case (4):
                 	eliminateClub();              
                	break;
@@ -48,11 +47,21 @@ public class Menu {
                 case (6):
                 	eliminatePet();
                 break;
+                case (7):
+                	generateClubList();
+                break;	
+                case (0):
+                	exit = true;
+                break;
             }
         }
 	}
 
-	private static void eliminateClub() {
+	public static void generateClubList() {
+		infoSis.generateClubListsInsertion();
+	}
+
+	public static void eliminateClub() {
 		System.out.print("Digite el codigo o el nombre del Club: ");
 		String identification = scanStr.nextLine();
 		try {
@@ -177,7 +186,8 @@ public class Menu {
 		System.out.println("4. Eliminar Club");
 		System.out.println("5. Eliminar Duenio");
 		System.out.println("6. Eliminar Mascota");
-
+		System.out.println("7. Generar listas");
+		
 	}
 
 }

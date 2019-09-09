@@ -7,18 +7,20 @@ import exceptions.NotFoundException;
 
 public class InfoClubs {
 
+	public static String dir = "D:\\AAPROGRAMAS\\apo2\\LAB2\\PetClub\\PetClub\\doc\\clubs.txt";
+
 	private ArrayList<Club> clubs;
 
 	public InfoClubs() {
+		
 		clubs = new ArrayList<Club>();
-		Club club1 = new Club("102156", "Juanchio", "16/8/2019", "Perro");
-		clubRegister(club1);
+		importFiles();
 	}
 
 	public void clubRegister(Club newClub) {
 		clubs.add(newClub);
 		try {
-			FileWriter entry = new FileWriter("D:\\AAPROGRAMAS\\apo2\\LAB2\\PetClub\\PetClub\\doc\\DATA.txt");
+			FileWriter entry = new FileWriter(dir);
 
 			BufferedWriter bufferW = new BufferedWriter(entry);
 
@@ -37,8 +39,22 @@ public class InfoClubs {
 
 	}
 
-	public void generateLists() {
-
+	public void generateClubListsInsertion() {
+		ArrayList<Club> n = getClubs();
+		int in;
+		 
+        for (int i = 1 ; i < n.size() ; i++) {
+            Club aux = n.get(i);
+            in = i;  
+        
+            while (in > 0 && n.get(in - 1).countOwners() > aux.countOwners()) {
+                n.add(in, n.get(in - 1));
+                --in;
+            }
+ 
+            n.add(in, aux);	
+        }
+        setClubs(n);
 	}
 
 	public void ownerRegister(int club, Owner newOwner) {
@@ -57,7 +73,7 @@ public class InfoClubs {
 			try {
 				if (identification.equals(clubs.get(k).getName()) || identification.equals(clubs.get(k).getId())) {
 					clubs.remove(k);
-					FileWriter entry = new FileWriter("D:\\AAPROGRAMAS\\apo2\\LAB2\\PetClub\\PetClub\\doc\\DATA.txt");
+					FileWriter entry = new FileWriter(dir);
 
 					BufferedWriter bufferW = new BufferedWriter(entry);
 
@@ -67,14 +83,13 @@ public class InfoClubs {
 						bufferW.write(nClub);
 						bufferW.newLine();
 					}
-
 					bufferW.close();
 					exit = true;
 				} else if (comp == clubs.size()) {
 					new NotFoundException().printStackTrace();
 				}
 			} catch (Exception e) {
-				
+
 			}
 		}
 	}
@@ -98,7 +113,8 @@ public class InfoClubs {
 	public String getListClubs() {
 		String msg = "";
 		for (int i = 0; i < clubs.size(); i++) {
-			msg += i + ") " + clubs.get(i).getName() + "\n";
+//			msg += i + ") " + clubs.get(i).getName() + "\n";
+			msg += clubs.get(i) +"\n";
 		}
 		return msg;
 	}
@@ -111,8 +127,23 @@ public class InfoClubs {
 		return clubs.get(indexClub).petList(indexOwner);
 	}
 	
-	public void exportClubs() {
+	public void importFiles() {
+		File file = new File(dir);
+		try {
+			BufferedReader buffer = new BufferedReader(new FileReader(file));
+			String line = "";
+			
+			while ((line = buffer.readLine())!= null) {
+				String[] s = line.split(",");
+				Club e = new Club(s[0],s[1], s[2], s[3]);
+				clubs.add(e);
+				
+			}
+			buffer.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		            
 	}
 }

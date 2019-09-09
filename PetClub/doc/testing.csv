@@ -1,0 +1,1001 @@
+id,first_name,gender,mascotType
+1,Gabbie,1/20/2019,"Nutcracker, clark's"
+2,Erasmus,12/2/2018,Eurasian red squirrel
+3,Ferrel,9/23/2018,"Armadillo, giant"
+4,Barnard,10/28/2018,Square-lipped rhinoceros
+5,Meir,7/10/2019,Ring-tailed lemur
+6,Fionna,5/4/2019,Striped hyena
+7,Aurilia,6/21/2019,Pygmy possum
+8,Bryan,11/26/2018,Red-winged hawk (unidentified)
+9,Kennedy,8/3/2019,"Fox, crab-eating"
+10,Trevar,9/25/2018,Western patch-nosed snake
+11,Mattheus,9/7/2019,"Cat, tiger"
+12,Tiebold,2/15/2019,"Shrike, southern white-crowned"
+13,Carlye,10/21/2018,Roe deer
+14,Desiri,12/6/2018,Richardson's ground squirrel
+15,Catlin,9/21/2018,Asian foreset tortoise
+16,Pat,11/24/2018,Madagascar hawk owl
+17,Harwell,12/10/2018,Dama wallaby
+18,Nicolea,8/9/2019,Common wombat
+19,Eilis,6/9/2019,African lynx
+20,Westleigh,10/3/2018,Arctic tern
+21,Jaquenette,10/1/2018,Flying fox (unidentified)
+22,Rhys,9/2/2019,Malachite kingfisher
+23,Tye,4/16/2019,"Possum, common brushtail"
+24,Rutledge,4/11/2019,Caracal
+25,Carroll,6/6/2019,Uinta ground squirrel
+26,Gwennie,9/4/2019,"Buffalo, african"
+27,Elissa,3/31/2019,Black-fronted bulbul
+28,Gregg,2/23/2019,Long-tailed spotted cat
+29,Kean,6/13/2019,African lion
+30,Bard,12/27/2018,"Rhea, common"
+31,Ellette,8/3/2019,Eastern white pelican
+32,Shelli,7/11/2019,Greater blue-eared starling
+33,Peg,7/16/2019,Red deer
+34,Cecilius,5/19/2019,"Goose, andean"
+35,Beck,1/19/2019,"Fox, blue"
+36,Erin,1/7/2019,"Owl, great horned"
+37,Ainslie,6/22/2019,"Wapiti, elk,"
+38,Isis,7/9/2019,Blackbuck
+39,Greta,11/13/2018,Indian mynah
+40,Pierre,3/24/2019,Red-tailed wambenger
+41,Isadora,10/6/2018,Red hartebeest
+42,Hamel,5/28/2019,Waved albatross
+43,Kelcey,9/22/2018,"Spoonbill, european"
+44,Donni,7/29/2019,"Lion, galapagos sea"
+45,Averil,6/9/2019,Glossy ibis
+46,Lise,4/20/2019,Blackbuck
+47,Ole,2/5/2019,Gaur
+48,Terrie,6/8/2019,"Antelope, roan"
+49,Aubine,7/3/2019,"Owl, snowy"
+50,Cosmo,11/9/2018,Weeper capuchin
+51,Dorise,8/27/2019,Jabiru stork
+52,Bertrand,12/20/2018,African skink
+53,Rivalee,10/27/2018,Asiatic wild ass
+54,Luce,6/29/2019,Long-tailed jaeger
+55,Hirsch,12/15/2018,Snake-necked turtle
+56,Marietta,8/27/2019,Black and white colobus
+57,Clemmy,10/3/2018,"Phascogale, red-tailed"
+58,Abigale,1/27/2019,Nine-banded armadillo
+59,Delphinia,11/27/2018,African darter
+60,Lay,5/15/2019,Stone sheep
+61,Micheil,5/11/2019,"Ferret, black-footed"
+62,Tod,3/13/2019,Lesser masked weaver
+63,Olivie,6/19/2019,Carpet python
+64,Shane,10/29/2018,Caracara (unidentified)
+65,Vivia,5/2/2019,"Dog, black-tailed prairie"
+66,Winfield,9/3/2019,"Seal, southern elephant"
+67,Noach,1/14/2019,White spoonbill
+68,Reece,8/12/2019,White-faced tree rat
+69,Dietrich,4/29/2019,"Nighthawk, common"
+70,Leslie,2/8/2019,"Gecko, tokay"
+71,Kayla,11/18/2018,Common palm civet
+72,Rudolf,4/20/2019,Eurasian badger
+73,Sabina,5/6/2019,Denham's bustard
+74,Bernardine,11/21/2018,Vine snake (unidentified)
+75,Rosina,2/21/2019,Red-breasted nuthatch
+76,Hanna,11/29/2018,American alligator
+77,Aili,9/30/2018,"Squirrel, nelson ground"
+78,Karole,1/2/2019,Thirteen-lined squirrel
+79,Amalita,2/4/2019,"Dove, emerald-spotted wood"
+80,Des,7/13/2019,Bushpig
+81,Clint,5/3/2019,Western grey kangaroo
+82,Tonia,1/5/2019,Coyote
+83,Holli,8/25/2019,"Salmon, sockeye"
+84,Lucita,12/31/2018,"Wallaby, bennett's"
+85,Pammy,6/27/2019,"Heron, yellow-crowned night"
+86,Pierette,5/13/2019,Kinkajou
+87,Jeanelle,2/16/2019,Guerza
+88,Aguste,4/15/2019,Water legaan
+89,Vince,10/11/2018,"Turtle, snake-necked"
+90,Merrile,9/7/2019,Red-legged pademelon
+91,Duane,10/17/2018,"Wallaby, dama"
+92,Merry,8/9/2019,Superb starling
+93,Nikolas,7/3/2019,Herring gull
+94,Dal,9/13/2018,Nilgai
+95,Anstice,7/2/2019,White-faced whistling duck
+96,Glenden,9/21/2018,"Vulture, lappet-faced"
+97,Vally,8/9/2019,"Francolin, coqui"
+98,Howie,11/17/2018,"Rattlesnake, eastern diamondback"
+99,Sarajane,10/27/2018,"Goose, knob-nosed"
+100,Meriel,8/6/2019,"Ibis, glossy"
+101,Cathrine,5/11/2019,Golden brush-tailed possum
+102,Greggory,10/4/2018,African lion
+103,Rosa,8/2/2019,"Ibis, glossy"
+104,Wilone,9/30/2018,"Jackal, indian"
+105,Elonore,1/28/2019,Bat-eared fox
+106,Othello,12/27/2018,"Baboon, olive"
+107,Silvanus,8/25/2019,Kaffir cat
+108,Heidie,11/16/2018,"Goldeneye, barrows"
+109,Ranique,11/7/2018,Long-tailed skua
+110,Adina,9/23/2018,Western lowland gorilla
+111,Annis,8/20/2019,"Polecat, african"
+112,Hilary,1/14/2019,"Trotter, lily"
+113,Romona,6/6/2019,"Plover, three-banded"
+114,Jasmina,4/17/2019,Common green iguana
+115,Allyn,8/6/2019,Golden jackal
+116,Armando,11/30/2018,Red hartebeest
+117,Malachi,1/21/2019,Common waterbuck
+118,Luciano,12/2/2018,Richardson's ground squirrel
+119,Gerda,6/10/2019,"Coatimundi, white-nosed"
+120,Marielle,1/23/2019,"Sunbird, lesser double-collared"
+121,Norbie,3/20/2019,"Woodpecker, red-headed"
+122,Nevsa,5/30/2019,Indian star tortoise
+123,Grier,9/22/2018,Galapagos penguin
+124,Giorgi,11/14/2018,"Legaan, water"
+125,Francene,5/30/2019,"Lemur, ring-tailed"
+126,Adriano,5/8/2019,"Otter, north american river"
+127,Durante,6/25/2019,"Sheep, american bighorn"
+128,Kerr,6/4/2019,African skink
+129,Caresa,1/6/2019,"Insect, stick"
+130,Aldous,11/7/2018,Blue and yellow macaw
+131,Lark,12/26/2018,"Wallaby, euro"
+132,Caesar,5/18/2019,"Gazelle, grant's"
+133,Husain,11/3/2018,Lesser masked weaver
+134,Joyous,2/3/2019,Long-billed cockatoo
+135,Koenraad,8/5/2019,Grison
+136,Daffy,5/31/2019,White-winged black tern
+137,Christel,2/10/2019,Netted rock dragon
+138,Katinka,3/15/2019,Glossy starling (unidentified)
+139,Max,2/14/2019,"Butterfly, tropical buckeye"
+140,Riccardo,7/18/2019,Russian dragonfly
+141,Kacey,3/1/2019,Bushbuck
+142,Bret,8/9/2019,Wild turkey
+143,Cirstoforo,3/4/2019,African lynx
+144,Jenica,2/25/2019,"Gull, southern black-backed"
+145,Hardy,4/15/2019,Cape cobra
+146,Ilise,11/24/2018,Large cormorant
+147,Candide,8/28/2019,"Cardinal, black-throated"
+148,Alecia,4/4/2019,"White-eye, cape"
+149,Abdul,7/1/2019,"Toucan, red-billed"
+150,Matty,4/2/2019,"Cat, jungle"
+151,Nealy,10/12/2018,Sage grouse
+152,Maxine,10/5/2018,"Marmot, yellow-bellied"
+153,Lona,1/28/2019,Chuckwalla
+154,Nari,2/9/2019,Stanley bustard
+155,Marysa,10/18/2018,Trumpeter swan
+156,Llywellyn,8/28/2019,Comb duck
+157,Brandyn,10/24/2018,"Gecko, tokay"
+158,Erminie,9/20/2018,Common duiker
+159,Orin,11/1/2018,Paca
+160,Bucky,9/13/2018,"Oryx, beisa"
+161,Zitella,12/3/2018,Black-winged stilt
+162,Moe,3/10/2019,Brown hyena
+163,Johnette,7/1/2019,"Viper, egyptian"
+164,Dorise,7/23/2019,Adouri (unidentified)
+165,Orin,4/15/2019,Vicuna
+166,Kendrick,7/20/2019,Indian mynah
+167,Flem,7/10/2019,Nubian bee-eater
+168,Lotti,5/28/2019,"Buffalo, african"
+169,Jo,11/4/2018,Fat-tailed dunnart
+170,Nicolai,6/22/2019,"Buffalo, african"
+171,Bil,12/22/2018,Common pheasant
+172,Leanora,10/19/2018,"Waxbill, violet-eared"
+173,Leo,8/29/2019,"Vulture, turkey"
+174,Corry,8/28/2019,Steller's sea lion
+175,Wenona,7/15/2019,"Owl, madagascar hawk"
+176,Sadella,9/21/2018,Long-tailed skua
+177,Hurleigh,8/29/2019,"Puma, south american"
+178,Marjy,5/25/2019,White-browed owl
+179,Bourke,1/12/2019,"Cardinal, red-capped"
+180,Oates,6/16/2019,Black and white colobus
+181,Garrik,12/14/2018,"Langur, hanuman"
+182,Aubree,8/25/2019,Common turkey
+183,Eveline,7/13/2019,Desert kangaroo rat
+184,Ranice,11/19/2018,Springbok
+185,Innis,1/17/2019,Northern fur seal
+186,Izabel,4/19/2019,Glossy ibis
+187,Phyllida,3/26/2019,"Grebe, little"
+188,Iormina,5/24/2019,Blue fox
+189,Talbert,5/16/2019,Grey fox
+190,Lora,8/20/2019,Tailless tenrec
+191,Korney,8/2/2019,Trumpeter swan
+192,Sylvia,4/3/2019,Prehensile-tailed porcupine
+193,Barron,7/6/2019,"Lion, california sea"
+194,Simmonds,3/26/2019,"Hedgehog, south african"
+195,Swen,8/5/2019,Northern phalarope
+196,Norton,9/15/2018,Fat-tailed dunnart
+197,Faustina,11/23/2018,Dama wallaby
+198,Elton,7/30/2019,Killer whale
+199,Viviene,3/31/2019,"Waterbuck, common"
+200,Adolpho,3/6/2019,Blue-tongued skink
+201,Egan,3/29/2019,"Buffalo, american"
+202,Byran,9/2/2019,Long-nosed bandicoot
+203,Edie,8/6/2019,"Porcupine, african"
+204,Teresita,1/21/2019,"Weaver, white-browed sparrow"
+205,Harp,1/22/2019,"Lizard, blue-tongued"
+206,Verina,12/13/2018,"Tern, arctic"
+207,Maggee,11/3/2018,Western spotted skunk
+208,Otto,10/21/2018,Leopard
+209,Hanni,12/7/2018,Laughing kookaburra
+210,Demetri,5/8/2019,Buttermilk snake
+211,Audre,9/13/2018,Red lava crab
+212,Jody,10/21/2018,Eastern white pelican
+213,Joey,8/17/2019,"Gull, swallow-tail"
+214,Ebenezer,1/7/2019,African polecat
+215,Kaye,1/8/2019,Springbok
+216,Carlee,12/7/2018,Red lava crab
+217,Jacenta,7/26/2019,"Weaver, chestnut"
+218,Rice,5/30/2019,"Fox, silver-backed"
+219,Cyndia,7/17/2019,"Caiman, spectacled"
+220,Armand,4/12/2019,Burmese black mountain tortoise
+221,Corine,3/14/2019,Common langur
+222,Andy,8/16/2019,Darwin ground finch (unidentified)
+223,Wilhelm,10/1/2018,"Squirrel, golden-mantled ground"
+224,Alikee,9/14/2018,"Pintail, white-cheeked"
+225,Kerry,3/27/2019,"Dove, galapagos"
+226,Benjie,9/16/2018,"Nuthatch, red-breasted"
+227,Kienan,7/4/2019,Impala
+228,Vasilis,4/11/2019,Common goldeneye
+229,Alessandro,10/29/2018,Long-finned pilot whale
+230,Gloriana,2/14/2019,Cobra (unidentified)
+231,Justen,9/6/2019,"Crane, wattled"
+232,Conchita,12/11/2018,Wild water buffalo
+233,Lennard,11/10/2018,"Falcon, prairie"
+234,Raynard,2/14/2019,Bateleur eagle
+235,Shadow,12/3/2018,"Zebra, plains"
+236,Napoleon,4/12/2019,Impala
+237,Tyson,11/25/2018,Blue-faced booby
+238,Jeanne,6/29/2019,Swallow (unidentified)
+239,Enrico,6/25/2019,"Flamingo, roseat"
+240,Sheryl,9/29/2018,African jacana
+241,Padriac,8/11/2019,American Virginia opossum
+242,Melitta,12/16/2018,Pocket gopher (unidentified)
+243,Derrick,12/2/2018,Plains zebra
+244,Vasili,8/28/2019,Tree porcupine
+245,Charil,7/29/2019,"Starling, cape"
+246,Killie,1/5/2019,"Chipmunk, least"
+247,Samuele,8/14/2019,Long-crested hawk eagle
+248,Damien,6/9/2019,"Seal, common"
+249,Ella,4/16/2019,Mountain lion
+250,Dedie,4/11/2019,Netted rock dragon
+251,Zedekiah,11/29/2018,"Boubou, southern"
+252,Roanna,11/10/2018,African lynx
+253,Sibby,2/12/2019,"Lion, asian"
+254,Halsy,12/11/2018,"Squirrel, indian giant"
+255,Tiena,9/9/2018,Grizzly bear
+256,Gasper,5/6/2019,Butterfly (unidentified)
+257,Luci,3/22/2019,Short-nosed bandicoot
+258,Arie,11/24/2018,Ring-tailed gecko
+259,Ranna,8/25/2019,"Heron, grey"
+260,Tris,6/12/2019,Arctic tern
+261,Susi,7/5/2019,Guerza
+262,Sean,9/14/2018,"Phalarope, red"
+263,Wilow,11/4/2018,African elephant
+264,Shanna,6/11/2019,"Cat, kaffir"
+265,Jenelle,2/1/2019,Asian water dragon
+266,Prinz,10/10/2018,"Vulture, white-rumped"
+267,Brewer,11/21/2018,Eastern diamondback rattlesnake
+268,Emile,3/16/2019,Greater rhea
+269,Fair,3/31/2019,"Dove, emerald-spotted wood"
+270,Joyan,4/14/2019,Moose
+271,Michel,12/8/2018,Blacksmith plover
+272,Findley,12/12/2018,Frilled lizard
+273,Andrew,6/16/2019,Downy woodpecker
+274,Beulah,9/5/2019,African ground squirrel (unidentified)
+275,Con,3/2/2019,"Crane, black-crowned"
+276,Gottfried,6/9/2019,Paca
+277,Eward,2/10/2019,Great cormorant
+278,Jonas,2/21/2019,Miner's cat
+279,Giffy,5/10/2019,Manatee
+280,Cy,2/18/2019,Lesser double-collared sunbird
+281,Nerita,6/22/2019,Trumpeter swan
+282,Elly,12/24/2018,"Admiral, indian red"
+283,Trumaine,4/23/2019,"Rat, white-faced tree"
+284,Avictor,5/27/2019,"Swan, trumpeter"
+285,Berta,6/17/2019,"Gecko, tokay"
+286,Hayward,5/17/2019,"Sloth, two-toed tree"
+287,Madalena,10/2/2018,Killer whale
+288,Emalia,8/3/2019,Bent-toed gecko
+289,Sibella,3/11/2019,Yellow-brown sungazer
+290,Inglis,9/15/2018,Ring-tailed gecko
+291,Thomasa,6/9/2019,"Stork, black-necked"
+292,Vail,11/28/2018,"Dog, black-tailed prairie"
+293,Erick,7/14/2019,Nine-banded armadillo
+294,Lori,6/29/2019,"Lion, south american sea"
+295,Gerta,10/21/2018,Gerenuk
+296,Ladonna,1/2/2019,Frog (unidentified)
+297,Arnold,5/8/2019,"Cat, african wild"
+298,Catharina,3/27/2019,"Turtle, snake-necked"
+299,Sybille,10/16/2018,"Penguin, galapagos"
+300,Rolph,7/11/2019,"Roadrunner, greater"
+301,Sile,11/20/2018,"Echidna, short-beaked"
+302,Adrianna,9/12/2018,Greater flamingo
+303,Emmalee,9/4/2019,Lizard (unidentified)
+304,Mariam,7/13/2019,"Civet, small-toothed palm"
+305,Clerkclaude,1/21/2019,"Bat, asian false vampire"
+306,Kerry,3/24/2019,Clark's nutcracker
+307,Charo,8/5/2019,Snow goose
+308,Farica,11/14/2018,Springhare
+309,Hoyt,2/21/2019,Black vulture
+310,Marcy,9/17/2018,Great skua
+311,Evangelia,12/26/2018,"Armadillo, seven-banded"
+312,Cristobal,10/10/2018,Wild turkey
+313,Lodovico,12/12/2018,"Lourie, grey"
+314,Lockwood,12/11/2018,"Jaeger, long-tailed"
+315,Birk,7/1/2019,White-throated monitor
+316,Teddie,8/22/2019,"Boa, emerald green tree"
+317,Maire,11/29/2018,Native cat
+318,Donavon,12/29/2018,Chuckwalla
+319,Hermina,3/1/2019,"Waterbuck, common"
+320,Worthington,8/21/2019,"Kangaroo, black-faced"
+321,Bordie,1/30/2019,Asian foreset tortoise
+322,Ivette,1/24/2019,Llama
+323,Kerr,3/5/2019,Native cat
+324,Annalise,3/23/2019,Collared lizard
+325,Ariella,4/27/2019,"Openbill, asian"
+326,Cymbre,4/1/2019,"Turaco, violet-crested"
+327,Melisande,10/10/2018,Carmine bee-eater
+328,Correna,10/8/2018,African jacana
+329,Wenda,3/12/2019,"Bulbul, black-fronted"
+330,Barnebas,2/20/2019,Two-toed sloth
+331,Neysa,7/4/2019,Mara
+332,Fraze,4/23/2019,"Gecko, bent-toed"
+333,Ibrahim,7/24/2019,"Cockatoo, red-breasted"
+334,Kariotta,1/15/2019,"Lion, south american sea"
+335,Kalie,8/4/2019,"Hawk, ferruginous"
+336,Granger,4/18/2019,Asian elephant
+337,Odella,2/13/2019,"Mongoose, banded"
+338,Annadiane,4/7/2019,"Goose, spur-winged"
+339,Maggie,1/3/2019,Mountain lion
+340,Benedetto,7/11/2019,"Dove, mourning collared"
+341,Kerri,11/30/2018,"Toucan, white-throated"
+342,Bernice,4/2/2019,"Ferret, black-footed"
+343,Heywood,9/5/2019,American racer
+344,Arlie,12/15/2018,Gecko (unidentified)
+345,Daryn,7/10/2019,Paradoxure
+346,Jyoti,4/25/2019,Common shelduck
+347,Dannie,10/30/2018,"Bird, pied butcher"
+348,Gabriell,1/18/2019,"Baboon, savanna"
+349,Red,6/5/2019,"Hawk, red-tailed"
+350,Ddene,8/7/2019,Australian pelican
+351,Lorin,4/2/2019,"Robin, kalahari scrub"
+352,Kristen,2/9/2019,Northern phalarope
+353,Kathie,7/22/2019,Euro wallaby
+354,Faith,5/24/2019,"Squirrel, european red"
+355,Bird,5/15/2019,Asian elephant
+356,Rufus,5/11/2019,"Corella, long-billed"
+357,Anet,4/27/2019,"Constrictor, eastern boa"
+358,Aaron,5/14/2019,Grey-footed squirrel
+359,Margy,3/18/2019,Peregrine falcon
+360,Dyanna,3/16/2019,Eastern quoll
+361,Charlotte,6/25/2019,"Cat, native"
+362,Ulrika,2/17/2019,"Gecko, tokay"
+363,Mohandas,5/25/2019,Puna ibis
+364,Aleece,1/10/2019,"Oryx, fringe-eared"
+365,Carmella,12/13/2018,Southern right whale
+366,Shellie,7/28/2019,Common brushtail possum
+367,Melody,3/24/2019,"Puffin, horned"
+368,Nealon,2/8/2019,Small-toothed palm civet
+369,Carine,10/31/2018,White spoonbill
+370,Archibaldo,11/5/2018,Dusky rattlesnake
+371,Sidonnie,5/27/2019,"Squirrel, golden-mantled ground"
+372,Lela,2/26/2019,"Vulture, white-rumped"
+373,Lianna,4/6/2019,"Pigeon, feral rock"
+374,Israel,5/21/2019,Ringtail cat
+375,Pauli,11/21/2018,"Waxbill, black-cheeked"
+376,Conroy,6/18/2019,Galapagos penguin
+377,Sophi,9/25/2018,Gaur
+378,Niki,5/19/2019,"Glider, squirrel"
+379,Anallese,6/11/2019,"Turtle, long-necked"
+380,Cynthie,11/23/2018,"Lemur, grey mouse"
+381,Claybourne,8/3/2019,"Sparrow, rufous-collared"
+382,Ula,10/4/2018,White-tailed jackrabbit
+383,Chicky,12/24/2018,Oriental white-backed vulture
+384,Joanie,9/9/2018,"Sheep, stone"
+385,Kerrill,3/11/2019,Black-cheeked waxbill
+386,Dido,12/3/2018,"Cow, scottish highland"
+387,Eolande,10/1/2018,"Dog, raccoon"
+388,Uri,1/23/2019,Trumpeter swan
+389,Wallace,5/8/2019,"Sandpiper, spotted wood"
+390,Peyter,4/1/2019,Currasow (unidentified)
+391,Jenine,4/4/2019,White-rumped vulture
+392,Hallie,10/23/2018,"Cat, cape wild"
+393,Juli,3/3/2019,"Squirrel, eastern fox"
+394,Vince,12/6/2018,Green-winged macaw
+395,Kameko,12/9/2018,Gerbil (unidentified)
+396,Ibbie,10/29/2018,"Plover, blacksmith"
+397,Allissa,5/3/2019,Bat-eared fox
+398,Juanita,7/24/2019,"Alligator, american"
+399,Mil,6/3/2019,"Robin, white-throated"
+400,Tilda,8/5/2019,"Cockatoo, red-tailed"
+401,Devon,1/13/2019,"Caiman, spectacled"
+402,Constance,8/1/2019,"Heron, striated"
+403,Dee dee,1/9/2019,"Pelican, eastern white"
+404,Seka,10/8/2018,Dassie
+405,Wilton,5/24/2019,Whip-tailed wallaby
+406,Louella,4/20/2019,Sarus crane
+407,Ario,3/20/2019,"Weaver, chestnut"
+408,Nealy,7/15/2019,"Fox, silver-backed"
+409,Skipper,7/6/2019,White-cheeked pintail
+410,Terence,12/16/2018,Sociable weaver
+411,Tony,2/21/2019,"Bird, pied butcher"
+412,Jamie,10/22/2018,Australian sea lion
+413,Katrinka,12/21/2018,"Lion, mountain"
+414,Vernor,1/9/2019,Black-throated butcher bird
+415,Obediah,8/2/2019,"Otter, african clawless"
+416,Dino,8/25/2019,Asiatic wild ass
+417,Latisha,8/21/2019,"Brocket, red"
+418,Corliss,11/29/2018,"Goose, snow"
+419,Trixy,12/31/2018,"Stork, european"
+420,Isidore,8/27/2019,"Badger, american"
+421,Zorina,8/16/2019,"Pademelon, red-legged"
+422,Tabby,4/21/2019,Tawny frogmouth
+423,Stephi,1/9/2019,"Wombat, common"
+424,Jefferson,8/12/2019,"Monkey, vervet"
+425,Fredra,9/8/2018,Fairy penguin
+426,Lettie,10/11/2018,Spotted hyena
+427,Bess,6/19/2019,"Stilt, black-winged"
+428,Adella,4/25/2019,Gray heron
+429,Alis,5/23/2019,"Racer, american"
+430,Normie,12/5/2018,Kafue flats lechwe
+431,Barri,2/14/2019,"Antechinus, brown"
+432,Dale,5/1/2019,Red-billed tropic bird
+433,Brigitta,6/5/2019,Spur-winged goose
+434,Bord,1/21/2019,Curve-billed thrasher
+435,Staford,3/19/2019,"Bear, polar"
+436,Rosene,3/10/2019,Sockeye salmon
+437,Hakim,9/18/2018,Sidewinder
+438,Farlie,3/24/2019,"Coot, red-knobbed"
+439,Lauryn,5/22/2019,"Gazelle, grant's"
+440,Flossy,2/1/2019,Mississippi alligator
+441,Trina,10/26/2018,"Rhinoceros, white"
+442,Clarette,7/31/2019,"Mouse, four-striped grass"
+443,Berty,9/15/2018,Snowy egret
+444,Frank,11/10/2018,Spotted wood sandpiper
+445,Zelma,4/16/2019,White-lipped peccary
+446,Graehme,10/21/2018,"Lion, south american sea"
+447,Denis,1/12/2019,"Dolphin, striped"
+448,Oates,12/22/2018,"Sheep, stone"
+449,Luce,10/4/2018,"Ass, asiatic wild"
+450,Kylila,12/12/2018,White-winged dove
+451,Elonore,8/13/2019,"Civet, small-toothed palm"
+452,Zachary,3/28/2019,"Darter, african"
+453,Delbert,5/22/2019,"Duck, blue"
+454,Jerrilyn,1/12/2019,"Beaver, north american"
+455,Becki,9/24/2018,Australian spiny anteater
+456,Melody,7/20/2019,"Dove, ring"
+457,Wang,8/4/2019,Black-crowned crane
+458,Laura,5/9/2019,European beaver
+459,Giffie,11/14/2018,"Cormorant, javanese"
+460,Jodi,10/6/2018,"Dragon, ornate rock"
+461,Doy,12/8/2018,Green vine snake
+462,Aksel,3/21/2019,"Dragon, netted rock"
+463,Zak,7/29/2019,"Lemming, collared"
+464,Sharon,5/28/2019,"Vulture, white-rumped"
+465,Nappie,4/15/2019,Sociable weaver
+466,Jobey,4/18/2019,"Crocodile, nile"
+467,Leonanie,3/16/2019,Chuckwalla
+468,Caesar,9/30/2018,"Tortoise, burmese brown mountain"
+469,Giordano,6/24/2019,North American beaver
+470,Kakalina,8/18/2019,Western lowland gorilla
+471,Margalo,5/8/2019,"Puffin, horned"
+472,Tobiah,12/9/2018,"Fox, silver-backed"
+473,Byrom,11/29/2018,"Seal, common"
+474,Madelin,11/13/2018,Banded mongoose
+475,Janeva,5/25/2019,Brush-tailed rat kangaroo
+476,Dewitt,8/7/2019,"Bustard, stanley"
+477,Gale,4/13/2019,"Magpie, black-backed"
+478,Henrik,8/23/2019,"Gull, silver"
+479,Sandor,6/11/2019,Fisher
+480,Basilio,3/8/2019,"Squirrel, red"
+481,Scottie,2/23/2019,"Swan, trumpeter"
+482,Paton,11/20/2018,"Hyena, brown"
+483,Rustie,4/7/2019,Grey lourie
+484,Lorianna,6/20/2019,Galapagos tortoise
+485,Lucy,5/14/2019,"Trumpeter, green-winged"
+486,Cristian,6/19/2019,"Rhea, greater"
+487,Gale,10/20/2018,"Fox, cape"
+488,Catlee,9/14/2018,Scaly-breasted lorikeet
+489,Stephine,4/24/2019,Javan gold-spotted mongoose
+490,Cross,2/23/2019,"Possum, pygmy"
+491,Kermit,7/15/2019,Blue catfish
+492,Mauricio,12/12/2018,"Rattlesnake, dusky"
+493,Boniface,7/4/2019,Coyote
+494,Iona,5/5/2019,Dromedary camel
+495,Garik,7/26/2019,Barrows goldeneye
+496,Jamal,8/18/2019,Black-faced kangaroo
+497,Aundrea,4/19/2019,"Stork, marabou"
+498,Gerry,12/23/2018,Prairie falcon
+499,Kerwinn,3/30/2019,Common raccoon
+500,Rochelle,12/11/2018,Blue fox
+501,Ara,2/17/2019,"Wallaby, dama"
+502,Sam,5/19/2019,Bennett's wallaby
+503,Hendrick,10/28/2018,"Fox, pampa gray"
+504,Boris,5/12/2019,Mourning collared dove
+505,Andriana,6/26/2019,"Rat, white-faced tree"
+506,Fiona,9/10/2018,Water monitor
+507,Shelly,8/20/2019,"Cormorant, large"
+508,Gaylor,3/18/2019,North American red fox
+509,Wadsworth,7/10/2019,Blue duck
+510,Dyanna,3/9/2019,"Echidna, short-beaked"
+511,Annamaria,4/9/2019,Red lava crab
+512,Demetris,11/28/2018,Cattle egret
+513,Bondy,6/16/2019,Levaillant's barbet
+514,Hortense,2/14/2019,Red deer
+515,Hillary,6/20/2019,Burmese black mountain tortoise
+516,Marilin,7/3/2019,"Lizard, collared"
+517,Thebault,2/21/2019,Warthog
+518,Titus,8/29/2019,Australian spiny anteater
+519,Jean,1/18/2019,Nile crocodile
+520,Dareen,9/24/2018,Southern elephant seal
+521,Kristy,4/20/2019,South American meadowlark (unidentified)
+522,Hildagard,7/4/2019,Golden-mantled ground squirrel
+523,Hinda,4/30/2019,"Hyena, spotted"
+524,Kynthia,8/6/2019,"Goat, mountain"
+525,Manny,9/28/2018,Common boubou shrike
+526,Dyana,10/21/2018,"Bird, pied butcher"
+527,Sheeree,2/20/2019,"Wallaby, dama"
+528,Penny,6/20/2019,Caracal
+529,Wyn,10/12/2018,Rainbow lory
+530,Cordy,10/25/2018,"Whale, killer"
+531,Gay,11/4/2018,"Macaw, blue and gold"
+532,Lanna,1/11/2019,Black-backed magpie
+533,Travers,3/22/2019,Long-nosed bandicoot
+534,Reube,11/26/2018,Ostrich
+535,Jackelyn,10/12/2018,Black kite
+536,Bernice,7/20/2019,Javan gold-spotted mongoose
+537,Dannie,12/29/2018,"Squirrel, red"
+538,Stephanus,6/8/2019,Eleven-banded armadillo (unidentified)
+539,Eloise,9/23/2018,Lesser masked weaver
+540,Liv,2/10/2019,Jungle cat
+541,Katie,1/31/2019,"Weaver, chestnut"
+542,Sly,10/22/2018,"Squirrel, pine"
+543,Mick,4/16/2019,"Cat, miner's"
+544,Julissa,9/16/2018,"Deer, mule"
+545,Nata,12/23/2018,Black curlew
+546,Bessie,11/14/2018,Old world fruit bat (unidentified)
+547,Lyn,11/4/2018,Small-spotted genet
+548,Alfons,11/7/2018,"Fox, asian red"
+549,Raynell,2/17/2019,Yellow-billed stork
+550,Jarid,9/29/2018,Red-breasted cockatoo
+551,Berke,6/20/2019,Common raccoon
+552,Kynthia,7/5/2019,"Cat, toddy"
+553,Matthaeus,10/2/2018,Whip-tailed wallaby
+554,Marleen,7/8/2019,"Fox, pampa gray"
+555,Lenore,7/4/2019,Blue waxbill
+556,Cindi,12/18/2018,"Snake, eastern indigo"
+557,Addy,5/6/2019,Caracara (unidentified)
+558,Alvina,6/14/2019,Brolga crane
+559,Gates,8/2/2019,"Lion, mountain"
+560,Viole,8/13/2019,Black kite
+561,Lucio,1/9/2019,"Lizard, desert spiny"
+562,Deb,6/21/2019,"Mongoose, eastern dwarf"
+563,Constantina,9/15/2018,"Oryx, fringe-eared"
+564,Maggy,12/13/2018,Black-tailed prairie dog
+565,Chandra,2/28/2019,Chameleon (unidentified)
+566,Trudy,10/16/2018,Sugar glider
+567,Kevina,9/25/2018,Malleefowl
+568,Balduin,10/12/2018,Ground legaan
+569,Lexie,11/27/2018,Great cormorant
+570,Janeen,7/17/2019,Bengal vulture
+571,Hatty,2/25/2019,Crested porcupine
+572,Cammy,12/30/2018,Egyptian viper
+573,Carlos,9/30/2018,Red meerkat
+574,Rickey,8/29/2019,"Bison, american"
+575,Amelia,5/28/2019,Indian peacock
+576,Vonny,11/4/2018,Pied crow
+577,Kevyn,4/13/2019,Yellow-throated sandgrouse
+578,Isa,5/25/2019,White-necked stork
+579,Hulda,1/18/2019,"Lemming, arctic"
+580,Netty,7/10/2019,"Dog, raccoon"
+581,Fionna,3/24/2019,Long-tailed skua
+582,Bald,6/16/2019,"Meerkat, red"
+583,Valentino,12/25/2018,Little cormorant
+584,Ludvig,10/4/2018,"Hawk-eagle, crowned"
+585,Anett,12/11/2018,Crested screamer
+586,Carry,4/2/2019,"Heron, yellow-crowned night"
+587,Carolynn,1/20/2019,"Hawk, ferruginous"
+588,Templeton,3/11/2019,"Dove, galapagos"
+589,Jyoti,10/12/2018,"Wallaby, euro"
+590,Felicia,8/20/2019,Common mynah
+591,Jany,3/14/2019,Grey mouse lemur
+592,Cissiee,11/20/2018,"Rat, desert kangaroo"
+593,Jerrie,2/17/2019,Common mynah
+594,Clemens,5/15/2019,"Bushbaby, large-eared"
+595,Gabriela,8/29/2019,"Sandgrouse, yellow-throated"
+596,Willem,3/26/2019,Lizard (unidentified)
+597,Diarmid,5/22/2019,Mexican boa
+598,Lenora,1/17/2019,"Buffalo, wild water"
+599,Dari,5/17/2019,"Oystercatcher, blackish"
+600,Almeta,2/12/2019,Common wallaroo
+601,Donalt,12/11/2018,"Squirrel, richardson's ground"
+602,Cyrillus,2/24/2019,"Francolin, swainson's"
+603,Alexei,10/18/2018,White-lipped peccary
+604,Bax,12/25/2018,"Bandicoot, long-nosed"
+605,Haleigh,9/4/2019,Fairy penguin
+606,Michaela,10/7/2018,Egyptian goose
+607,Bernadine,12/7/2018,"Lion, steller's sea"
+608,Ilario,7/21/2019,Yellow-necked spurfowl
+609,Adria,5/18/2019,Scarlet macaw
+610,Bunny,6/1/2019,Madagascar hawk owl
+611,Barb,7/19/2019,"Heron, striated"
+612,Alix,2/13/2019,"Sungazer, yellow-brown"
+613,Jonell,2/27/2019,"Whale, long-finned pilot"
+614,Jeralee,7/14/2019,Sidewinder
+615,Janis,3/2/2019,Leadbeateri's ground hornbill
+616,Kalli,5/20/2019,Green-backed heron
+617,Crystie,8/17/2019,Snowy owl
+618,Rudyard,2/21/2019,Yellow-headed caracara
+619,Bren,3/14/2019,"Jackrabbit, white-tailed"
+620,Janette,10/5/2018,Eastern boa constrictor
+621,Stephanie,10/25/2018,"Reedbuck, bohor"
+622,Jonas,4/19/2019,Western pygmy possum
+623,Grange,7/21/2019,"Cobra, egyptian"
+624,Lazar,12/12/2018,Galapagos hawk
+625,Julee,6/4/2019,"Penguin, little blue"
+626,Ben,3/7/2019,Bontebok
+627,Kelby,1/30/2019,Weeper capuchin
+628,Fanny,6/11/2019,Reindeer
+629,Karlis,5/5/2019,King cormorant
+630,Alistair,9/21/2018,Swamp deer
+631,Madlin,10/7/2018,Ornate rock dragon
+632,Conney,12/23/2018,Hudsonian godwit
+633,Jard,3/7/2019,Indian peacock
+634,Eadmund,5/20/2019,Roseat flamingo
+635,Hillary,6/20/2019,Squirrel glider
+636,Claus,2/10/2019,Common zebra
+637,Tiffi,5/15/2019,Greater blue-eared starling
+638,Cart,6/1/2019,"Jackal, asiatic"
+639,Brandais,6/20/2019,"Cockatoo, red-tailed"
+640,Carlotta,7/24/2019,"Monster, gila"
+641,Alia,10/29/2018,"Booby, blue-faced"
+642,Shannon,1/6/2019,"Bird, black-throated butcher"
+643,Erek,12/31/2018,Squirrel glider
+644,Dode,1/10/2019,"Bat, little brown"
+645,Shadow,6/9/2019,Suricate
+646,Henry,7/19/2019,"Echidna, short-beaked"
+647,Bartie,11/20/2018,Greater roadrunner
+648,Stanislas,4/12/2019,"Deer, white-tailed"
+649,Garner,6/19/2019,Common waterbuck
+650,Gaynor,6/17/2019,Goanna lizard
+651,Alfi,12/30/2018,Blue wildebeest
+652,Carissa,9/30/2018,Cape cobra
+653,Garland,1/30/2019,"Possum, golden brush-tailed"
+654,Querida,4/1/2019,"Quail, gambel's"
+655,Cacilie,2/14/2019,"Porcupine, north american"
+656,Hi,4/29/2019,Nile crocodile
+657,Braden,8/11/2019,Australian pelican
+658,Midge,6/7/2019,"Cat, native"
+659,Betsy,10/17/2018,"Turkey, australian brush"
+660,Edik,10/10/2018,"Pelican, brown"
+661,Chrystel,12/8/2018,Common boubou shrike
+662,Francesco,3/24/2019,"Rhinoceros, white"
+663,Layton,10/4/2018,"Anteater, giant"
+664,Lisle,9/22/2018,Two-toed tree sloth
+665,Daren,1/12/2019,Red-necked wallaby
+666,Darleen,1/9/2019,African wild dog
+667,Mike,3/6/2019,Stanley crane
+668,Matthus,5/14/2019,"Ibis, sacred"
+669,Teddie,5/30/2019,"Wallaby, dama"
+670,Mara,1/23/2019,Groundhog
+671,Rey,4/10/2019,"Stork, saddle-billed"
+672,Sile,12/13/2018,Crowned hawk-eagle
+673,Desdemona,1/23/2019,Alpaca
+674,Jacquelin,3/13/2019,"Bee-eater, nubian"
+675,Minetta,10/25/2018,"Shark, blue"
+676,Anselma,2/20/2019,Bahama pintail
+677,Nefen,11/25/2018,Prairie falcon
+678,Maryanna,5/23/2019,Woylie
+679,Farica,11/21/2018,African porcupine
+680,Gunner,5/8/2019,Common brushtail possum
+681,Bee,3/30/2019,Crowned eagle
+682,Colin,9/29/2018,Marabou stork
+683,Arlana,7/13/2019,"Porcupine, north american"
+684,Madelene,12/4/2018,Crab-eating raccoon
+685,Marlin,8/27/2019,Black-backed magpie
+686,Napoleon,3/11/2019,Galapagos mockingbird
+687,Aveline,10/28/2018,"Duck, mountain"
+688,Alasteir,2/15/2019,Brown capuchin
+689,Alic,5/12/2019,Blue and yellow macaw
+690,Sarena,5/20/2019,"Goose, canada"
+691,Bax,2/3/2019,"Fowl, helmeted guinea"
+692,Manon,1/7/2019,"Skink, blue-tongued"
+693,Daryl,10/28/2018,"Jackal, golden"
+694,Alden,8/7/2019,"Skimmer, four-spotted"
+695,Giacopo,6/29/2019,"Waxbill, blue"
+696,Deanne,7/15/2019,Eastern white pelican
+697,Viola,5/16/2019,"Nuthatch, red-breasted"
+698,Ernesta,9/27/2018,Waved albatross
+699,Kakalina,1/25/2019,"Sheep, red"
+700,Arlinda,3/4/2019,House sparrow
+701,Calvin,6/12/2019,Red-knobbed coot
+702,Stephana,2/6/2019,"Sloth, two-toed"
+703,Maggy,8/4/2019,"Bustard, kori"
+704,Nicolle,3/20/2019,"Pie, rufous tree"
+705,Carmita,1/23/2019,Sacred ibis
+706,Anneliese,6/8/2019,"Goose, canada"
+707,Shelby,2/6/2019,Great horned owl
+708,Madelaine,4/27/2019,"Lion, australian sea"
+709,Janela,11/26/2018,Blackbuck
+710,Siana,5/19/2019,"Capuchin, black-capped"
+711,Cammy,1/10/2019,Sulfur-crested cockatoo
+712,Henri,7/7/2019,Asiatic wild ass
+713,Barnie,7/31/2019,Alpaca
+714,Constantino,3/30/2019,"Moorhen, purple"
+715,Granger,6/27/2019,"Shrike, crimson-breasted"
+716,Ettore,11/3/2018,Agama lizard (unidentified)
+717,Marne,9/29/2018,Mexican boa
+718,Gerik,3/9/2019,Pronghorn
+719,Wynn,12/31/2018,Impala
+720,Tiffie,1/9/2019,"Sandpiper, spotted wood"
+721,Caleb,9/30/2018,Land iguana
+722,Moira,5/29/2019,"Eagle, crowned"
+723,Tyrone,2/18/2019,Great skua
+724,Tristan,10/29/2018,Vervet monkey
+725,Grete,3/23/2019,"Bird, black-throated butcher"
+726,Rock,6/30/2019,Springbuck
+727,Marj,5/25/2019,"Flycatcher, tyrant"
+728,Fons,4/22/2019,Fairy penguin
+729,Tandy,8/5/2019,Giant armadillo
+730,Melinda,3/14/2019,"Sunbird, lesser double-collared"
+731,Sarajane,7/10/2019,Bennett's wallaby
+732,Donovan,6/12/2019,Nubian bee-eater
+733,Cathryn,1/22/2019,"Bat, madagascar fruit"
+734,Felicio,10/18/2018,"Raven, white-necked"
+735,Mayor,5/8/2019,"Wallaby, euro"
+736,Buiron,11/15/2018,"Flamingo, greater"
+737,Hermon,2/10/2019,"Squirrel, antelope ground"
+738,Kelsey,12/17/2018,Giraffe
+739,Annalee,11/26/2018,"Gazer, sun"
+740,Stern,11/17/2018,Egyptian cobra
+741,De witt,2/9/2019,South American meadowlark (unidentified)
+742,Fannie,8/12/2019,European beaver
+743,Sallyanne,6/29/2019,Magellanic penguin
+744,Ram,6/28/2019,"Owl, australian masked"
+745,Min,10/14/2018,"Lizard, giant girdled"
+746,Milo,1/26/2019,"Pheasant, ring-necked"
+747,Hinda,12/28/2018,Carpet python
+748,Collen,12/10/2018,California sea lion
+749,Carolina,11/14/2018,Native cat
+750,Arnoldo,2/12/2019,"Leopard, indian"
+751,Hannis,11/7/2018,Desert tortoise
+752,Marianne,10/29/2018,Common genet
+753,Ambrose,5/22/2019,"Sheep, american bighorn"
+754,Sheff,10/11/2018,Green-winged macaw
+755,Reyna,2/13/2019,"Skunk, striped"
+756,Mayor,1/10/2019,Common mynah
+757,Merridie,9/10/2018,Kinkajou
+758,Cos,8/22/2019,Black kite
+759,Maiga,11/5/2018,Ground monitor (unidentified)
+760,Garvin,8/6/2019,"Heron, little"
+761,Danit,3/16/2019,"Dove, galapagos"
+762,Claudian,8/14/2019,Scaly-breasted lorikeet
+763,Roxie,9/23/2018,"Goose, cereopsis"
+764,Rupert,8/21/2019,Antelope ground squirrel
+765,Janelle,1/13/2019,Wild water buffalo
+766,Kristian,3/26/2019,"Otter, cape clawless"
+767,Hannis,8/19/2019,"Wolf, common"
+768,Hi,11/12/2018,"Zorro, common"
+769,Demetris,7/21/2019,Small Indian mongoose
+770,Abbot,12/25/2018,"Kangaroo, western grey"
+771,Fredrika,8/14/2019,Small-clawed otter
+772,Theodosia,4/27/2019,"Bat, little brown"
+773,Minna,4/5/2019,Asian red fox
+774,Mireielle,11/18/2018,"Bunting, crested"
+775,Aurore,5/6/2019,"Bird, pied butcher"
+776,Othilia,12/14/2018,"Snake, carpet"
+777,Dacy,8/24/2019,"Seal, common"
+778,Nara,8/17/2019,Laughing kookaburra
+779,Rheta,11/17/2018,White-cheeked pintail
+780,Charissa,1/28/2019,"Blackbird, red-winged"
+781,Vance,12/13/2018,Margay
+782,Brandyn,1/21/2019,Lesser masked weaver
+783,Andy,3/14/2019,Bontebok
+784,Georgie,5/26/2019,"Cardinal, red-capped"
+785,Roddy,3/1/2019,"Gecko, tokay"
+786,Nickola,8/12/2019,"Jaeger, long-tailed"
+787,Damita,10/6/2018,Euro wallaby
+788,Corine,12/29/2018,White-rumped vulture
+789,Reggie,3/13/2019,Agouti
+790,Cyb,7/21/2019,"Macaque, japanese"
+791,Whit,2/18/2019,Spotted deer
+792,Hannie,2/1/2019,"Heron, black-crowned night"
+793,Gilles,6/1/2019,"Lourie, grey"
+794,Elka,1/16/2019,American badger
+795,Donavon,6/25/2019,"Flamingo, roseat"
+796,Pasquale,10/24/2018,"Heron, green"
+797,Caz,8/11/2019,White-lipped peccary
+798,Bobina,1/28/2019,"Colobus, magistrate black"
+799,Silvan,8/26/2019,Western palm tanager (unidentified)
+800,Beauregard,8/1/2019,"Pheasant, common"
+801,Felike,3/11/2019,American marten
+802,Haskel,9/25/2018,King cormorant
+803,Casar,1/28/2019,Steenbuck
+804,Aldridge,11/3/2018,Crab-eating raccoon
+805,Dallon,10/7/2018,"Gecko, tokay"
+806,Oswell,10/6/2018,"Stork, jabiru"
+807,Rhianna,5/12/2019,Southern brown bandicoot
+808,Kirsti,4/21/2019,"Skua, great"
+809,Alikee,2/1/2019,"Baboon, yellow"
+810,Lishe,12/22/2018,"Tortoise, galapagos"
+811,Fletcher,4/17/2019,Mississippi alligator
+812,Gearard,9/17/2018,"Eagle, bateleur"
+813,Devi,1/27/2019,"Vulture, turkey"
+814,Stearne,1/21/2019,Arctic hare
+815,Win,9/26/2018,"Cormorant, great"
+816,Mable,2/26/2019,Pied crow
+817,Theodora,12/6/2018,"Puffin, horned"
+818,Cyrill,1/26/2019,"Turkey, australian brush"
+819,Carlos,10/3/2018,Striped hyena
+820,Laetitia,6/1/2019,Southern elephant seal
+821,Huntley,10/5/2018,Two-toed sloth
+822,Lock,3/14/2019,"Bear, black"
+823,Dianemarie,6/17/2019,Indian tree pie
+824,Kristo,7/7/2019,Polar bear
+825,Andee,7/12/2019,"Dove, rock"
+826,Ashley,10/15/2018,"Sandgrouse, yellow-throated"
+827,Jacinta,11/14/2018,Greater blue-eared starling
+828,Noami,5/29/2019,Black-capped chickadee
+829,Ailbert,3/19/2019,"Dove, white-winged"
+830,Kelcey,7/16/2019,Eastern grey kangaroo
+831,Beaufort,5/21/2019,"Rattlesnake, horned"
+832,Josephine,6/1/2019,"Moorhen, purple"
+833,Robinet,8/25/2019,White-winged dove
+834,Brewer,9/4/2019,"Oryx, beisa"
+835,Quintin,7/15/2019,"Colobus, black and white"
+836,Lucila,5/18/2019,"Dove, ring"
+837,Klarrisa,12/31/2018,"Mongoose, banded"
+838,Auria,11/3/2018,Black vulture
+839,Essie,4/12/2019,African porcupine
+840,Celka,7/16/2019,"Shrew, mandras tree"
+841,Berne,5/25/2019,"Phascogale, brush-tailed"
+842,Tod,4/11/2019,Grey-footed squirrel
+843,Norbie,3/22/2019,Eurasian badger
+844,Winston,11/19/2018,Black-tailed prairie dog
+845,Trevar,11/13/2018,California sea lion
+846,Lynett,9/8/2018,"Goose, greylag"
+847,Kali,8/29/2019,Knob-nosed goose
+848,Nikola,3/23/2019,"Baboon, savanna"
+849,Blinny,4/1/2019,Springbok
+850,Corbett,7/13/2019,"Mongoose, javan gold-spotted"
+851,Una,11/13/2018,"Squirrel, smith's bush"
+852,Roch,4/5/2019,Radiated tortoise
+853,Barrie,8/17/2019,"Badger, honey"
+854,Spike,12/9/2018,Eastern diamondback rattlesnake
+855,Zabrina,10/12/2018,"Pelican, great white"
+856,Bart,8/16/2019,"Nuthatch, red-breasted"
+857,Mignon,4/13/2019,White-browed owl
+858,Pris,9/3/2019,Long-crested hawk eagle
+859,Barbette,5/23/2019,Roan antelope
+860,Karyn,11/29/2018,"Fox, bat-eared"
+861,Jon,4/21/2019,"Shark, blue"
+862,Stephannie,6/12/2019,Gray duiker
+863,Kristina,8/30/2019,"Monkey, rhesus"
+864,Obadiah,6/11/2019,Black-faced kangaroo
+865,Gib,5/6/2019,"Pie, indian tree"
+866,Cly,1/3/2019,"Eland, common"
+867,Howey,8/17/2019,Hanuman langur
+868,Carmina,7/6/2019,"Deer, mule"
+869,Sherwin,8/20/2019,"Otter, giant"
+870,Sullivan,9/11/2018,Jungle cat
+871,Wayland,10/17/2018,House sparrow
+872,Amii,4/20/2019,Paca
+873,Derron,7/4/2019,"Weaver, sociable"
+874,Perry,5/28/2019,Platypus
+875,Cristobal,1/25/2019,"Jackal, indian"
+876,Aigneis,10/17/2018,"Sandgrouse, yellow-throated"
+877,Sissie,7/10/2019,Black kite
+878,Benetta,12/27/2018,"Macaw, blue and yellow"
+879,Rolland,2/14/2019,"Bushbaby, large-eared"
+880,Ina,7/17/2019,Common mynah
+881,Merrilee,8/13/2019,Rhesus monkey
+882,Maggi,10/10/2018,Tiger cat
+883,Clemens,10/26/2018,"Gull, swallow-tail"
+884,Elsworth,10/7/2018,"Cormorant, pied"
+885,Louella,8/14/2019,Malachite kingfisher
+886,Jacki,11/26/2018,White-mantled colobus
+887,Mellisa,11/1/2018,Bush dog
+888,Peder,9/27/2018,"Elk, Wapiti"
+889,Lavinia,11/7/2018,Common waterbuck
+890,Cyndie,11/16/2018,Hoary marmot
+891,Corenda,12/7/2018,Red-billed hornbill
+892,Tamma,9/28/2018,"Francolin, swainson's"
+893,Etan,5/23/2019,"Caracara, yellow-headed"
+894,Jojo,2/6/2019,"Pheasant, ring-necked"
+895,Sherlock,11/1/2018,"Dolphin, common"
+896,Edik,11/9/2018,Cheetah
+897,Pablo,7/1/2019,"Bleu, blue-breasted cordon"
+898,Luce,9/15/2018,Tree porcupine
+899,Foss,1/17/2019,Leadbeateri's ground hornbill
+900,Bayard,6/1/2019,"Fox, silver-backed"
+901,Noby,10/15/2018,Smith's bush squirrel
+902,Eugene,6/4/2019,Rock dove
+903,Kippy,4/9/2019,Southern sea lion
+904,Dyane,1/16/2019,"Bandicoot, long-nosed"
+905,Jane,10/22/2018,Royal tern
+906,Allina,1/17/2019,Red-cheeked cordon bleu
+907,Jacquetta,5/2/2019,Caracara (unidentified)
+908,Auberon,1/21/2019,Long-billed corella
+909,Tally,7/14/2019,"Pintail, bahama"
+910,Aldus,7/13/2019,Black-throated butcher bird
+911,Brenda,12/19/2018,Snowy owl
+912,Zola,10/3/2018,Blue fox
+913,Francoise,7/30/2019,"Weaver, red-billed buffalo"
+914,Gusti,10/20/2018,"Vulture, white-headed"
+915,Lothaire,5/1/2019,Fairy penguin
+916,Jenine,7/14/2019,Crested barbet
+917,Lela,10/4/2018,Long-billed corella
+918,Eveline,11/6/2018,"Grouse, greater sage"
+919,Latashia,8/7/2019,"Duck, comb"
+920,Jaquenetta,5/11/2019,"Toucan, white-throated"
+921,Nadia,5/1/2019,"Rat, white-faced tree"
+922,Odette,1/3/2019,"Brocket, red"
+923,Karlik,8/9/2019,Indian peacock
+924,Sharleen,9/9/2018,"Barbet, crested"
+925,Violante,7/3/2019,"Macaque, pig-tailed"
+926,Gregorius,8/10/2019,Greater sage grouse
+927,Gracie,3/6/2019,Coqui partridge
+928,Dallon,11/4/2018,Pronghorn
+929,Andros,12/5/2018,"Fox, crab-eating"
+930,Alexi,4/19/2019,"Deer, roe"
+931,Shana,7/7/2019,Red-necked phalarope
+932,Howie,8/10/2019,"Lourie, grey"
+933,Lannie,4/21/2019,White spoonbill
+934,Peyton,2/7/2019,"Falcon, prairie"
+935,Alvy,12/18/2018,Agile wallaby
+936,Paul,1/1/2019,"Alligator, mississippi"
+937,Missy,10/5/2018,"Lion, steller sea"
+938,Corena,4/25/2019,"Marten, american"
+939,Addia,1/16/2019,"Buffalo, american"
+940,Emmalynne,1/28/2019,"Boubou, southern"
+941,Marga,11/28/2018,"Cockatoo, roseate"
+942,Easter,1/19/2019,"Baboon, savanna"
+943,Mina,2/25/2019,African bush squirrel
+944,Erik,12/16/2018,Frilled dragon
+945,Iosep,8/2/2019,"Cormorant, large"
+946,Arlie,9/3/2019,Prehensile-tailed porcupine
+947,Dedra,3/2/2019,White-winged black tern
+948,Angelina,12/25/2018,Three-banded plover
+949,Anet,5/1/2019,Red-billed hornbill
+950,Diannne,5/26/2019,Swallow-tail gull
+951,Bertrando,12/15/2018,White-bellied sea eagle
+952,Inigo,4/7/2019,"Whale, long-finned pilot"
+953,Frayda,2/8/2019,Sarus crane
+954,Elisa,9/9/2018,Columbian rainbow boa
+955,Orran,2/26/2019,"Vulture, egyptian"
+956,Milissent,1/11/2019,"Cockatoo, slender-billed"
+957,Gabrielle,7/31/2019,"Salmon, sockeye"
+958,Eustace,11/20/2018,"Drongo, fork-tailed"
+959,Adrian,1/22/2019,Marabou stork
+960,Billi,7/18/2019,Common wombat
+961,Nickolas,1/19/2019,Ovenbird
+962,Gram,7/31/2019,Great skua
+963,Jon,2/5/2019,"Cat, jungle"
+964,Willard,7/1/2019,Common duiker
+965,Elenore,2/5/2019,Red-tailed wambenger
+966,Gothart,9/5/2019,Malachite kingfisher
+967,Shurlocke,8/12/2019,"Deer, white-tailed"
+968,Artemis,7/2/2019,Cereopsis goose
+969,Malena,12/5/2018,"Snake, tiger"
+970,Rachel,6/25/2019,Pale-throated three-toed sloth
+971,Benedikta,7/31/2019,Brindled gnu
+972,Lucie,7/30/2019,Yellow mongoose
+973,Evangeline,2/11/2019,Elegant crested tinamou
+974,Ulrick,7/16/2019,"Lizard, desert spiny"
+975,Shanon,12/4/2018,Nile crocodile
+976,Holden,7/14/2019,"Starfish, crown of thorns"
+977,Brigit,11/9/2018,Galapagos dove
+978,Ada,6/25/2019,Common waterbuck
+979,Niki,9/12/2018,Nelson ground squirrel
+980,Antony,2/13/2019,Reindeer
+981,Jojo,9/26/2018,Blue catfish
+982,Vonny,4/1/2019,Ibex
+983,Stephen,1/5/2019,"Langur, gray"
+984,Minna,12/17/2018,"Badger, american"
+985,Vanni,11/30/2018,Red-legged pademelon
+986,Terencio,6/12/2019,"Civet, common palm"
+987,Hanna,11/20/2018,"Rat, arboral spiny"
+988,Nonna,3/9/2019,Yellow-billed hornbill
+989,Eartha,7/1/2019,"Lion, galapagos sea"
+990,Viki,9/30/2018,"Squirrel, nelson ground"
+991,Francis,1/29/2019,"Goose, cereopsis"
+992,Humfrey,12/23/2018,Spotted wood sandpiper
+993,Conrade,3/3/2019,"Lory, rainbow"
+994,Torr,10/29/2018,Eurasian beaver
+995,Jeffie,2/26/2019,Bushpig
+996,Rod,3/23/2019,"Flamingo, roseat"
+997,Nickola,10/17/2018,"Vulture, black"
+998,Wrennie,11/24/2018,"Dove, galapagos"
+999,Merrile,9/9/2018,Frilled dragon
+1000,Biron,1/26/2019,Blue-breasted cordon bleu

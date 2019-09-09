@@ -3,7 +3,7 @@ package model;
 import java.io.*;
 import java.util.ArrayList;
 
-public class Club {
+public class Club implements Comparable<Club> {
 	// ATTRIBUTES
 	private String id;
 
@@ -25,6 +25,7 @@ public class Club {
 		this.date = date;
 		this.mascotType = mascotType;
 		owners = new ArrayList<Owner>();
+		importOwners();
 	}
 
 	// GET & SET
@@ -66,7 +67,7 @@ public class Club {
 
 	@Override
 	public String toString() {
-		return "Club [id=" + id + ", name=" + name + ", date=" + date + ", mascotType=" + mascotType;
+		return id + "," + name + "," + date + "," + mascotType;
 	}
 
 	public void setOwners(ArrayList<Owner> owners) {
@@ -132,13 +133,14 @@ public class Club {
 		return owners.get(indexOwner).petList();
 	}
 
-	public void export() {
+	public void importOwners() {
 		try {
 			ArrayList<Owner> export = null;
 			ObjectInputStream exportFile = new ObjectInputStream(
 			new FileInputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/owners" + getId() + ".txt"));
 			
-			export = (ArrayList<Owner>) exportFile.readObject();
+			ArrayList<Owner> readObject = (ArrayList<Owner>) exportFile.readObject();
+			export = readObject;
 			
 			for (int i = 0; i < export.size(); i++) {
 				owners.add(export.get(i));
@@ -149,6 +151,23 @@ public class Club {
 		} catch (Exception e) {
 			
 		}
+	}
+	
+	public int countOwners() {
+		return owners.size();
+	}
+
+	@Override
+	public int compareTo(Club o) {
+		int comp = 0;
+		if (countOwners()<o.countOwners()) {
+			comp = -1;
+		}else if (countOwners()>o.countOwners()) {
+			comp = 1;
+		}else if (countOwners() == o.countOwners()) {
+			comp = 0;
+		}
+		return comp;
 	}
 
 }
