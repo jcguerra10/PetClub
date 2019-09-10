@@ -159,14 +159,7 @@ public class Club implements Comparable<Club> {
 
 	@Override
 	public int compareTo(Club o) {
-		int comp = 0;
-		if (countOwners()<o.countOwners()) {
-			comp = -1;
-		}else if (countOwners()>o.countOwners()) {
-			comp = 1;
-		}else if (countOwners() == o.countOwners()) {
-			comp = 0;
-		}
+		int comp = getName().compareTo(o.getName());
 		return comp;
 	}
 

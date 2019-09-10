@@ -49,12 +49,25 @@ public class Menu {
                 break;
                 case (7):
                 	generateClubList();
+                break;
+                case (8):
+                	clubSortById();
+                break;
+                case (9):
+                	infoSis.sortByName();
+                break;
+                case (10):
+                	infoSis.sortByPetType();
                 break;	
                 case (0):
                 	exit = true;
                 break;
             }
         }
+	}
+
+	private static void clubSortById() {
+		infoSis.sortById();		
 	}
 
 	public static void generateClubList() {
@@ -172,7 +185,7 @@ public class Menu {
 		int indexClub = scanInt.nextInt();
 		System.out.println(infoSis.getListOwners(indexClub));
 		int indexOwner = scanInt.nextInt();
-		System.out.println(infoSis.petList(indexClub, indexOwner));
+		System.out.print("Digite el Codigo o Nombre de la mascota");
 		String idPet = scanInt.nextLine();
 		
 		infoSis.eliminatePet(indexClub, indexOwner, idPet);
@@ -187,6 +200,9 @@ public class Menu {
 		System.out.println("5. Eliminar Duenio");
 		System.out.println("6. Eliminar Mascota");
 		System.out.println("7. Generar listas");
+		System.out.println("8. Ordenar por Id");
+		System.out.println("9. Ordenar por Nombre");
+		System.out.println("10. Ordenar por Tipo de mascota");
 		
 	}
 

@@ -82,8 +82,9 @@ public class Owner implements Serializable, Comparable<Owner>{
 		pets.add(newPet);
 		try {
 			
-			ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets"+getId()+".txt"));
-			
+			ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream(
+					new File("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets" + getId() + ".txt")));
+
 			writeFile.writeObject(pets);
 			
 			writeFile.close();
@@ -116,7 +117,7 @@ public class Owner implements Serializable, Comparable<Owner>{
 			}
 		}
 	}
-	
+	  
 	public String petList() {
 		String msg = "";
 		
@@ -132,7 +133,7 @@ public class Owner implements Serializable, Comparable<Owner>{
 		try {
 			ArrayList<Pet> export = null;
 			ObjectInputStream exportFile = new ObjectInputStream(
-			new FileInputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/owners" + getId() + ".txt"));
+			new FileInputStream(new File("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets"+getId()+".txt")));
 			
 			ArrayList<Pet> readObject = (ArrayList<Pet>) exportFile.readObject();
 			export = readObject;
