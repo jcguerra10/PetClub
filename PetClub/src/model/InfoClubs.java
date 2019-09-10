@@ -12,7 +12,7 @@ public class InfoClubs {
 	private ArrayList<Club> clubs;
 
 	public InfoClubs() {
-		
+
 		clubs = new ArrayList<Club>();
 		importFiles();
 	}
@@ -96,7 +96,7 @@ public class InfoClubs {
 		String msg = "";
 		for (int i = 0; i < clubs.size(); i++) {
 //			msg += i + ") " + clubs.get(i).getName() + "\n";
-			msg += clubs.get(i) +"\n";
+			msg += clubs.get(i) + "\n";
 		}
 		return msg;
 	}
@@ -108,117 +108,160 @@ public class InfoClubs {
 	public String petList(int indexClub, int indexOwner) {
 		return clubs.get(indexClub).petList(indexOwner);
 	}
-	
+
 	public void importFiles() {
 		File file = new File(dir);
 		try {
 			BufferedReader buffer = new BufferedReader(new FileReader(file));
 			String line = "";
-			
-			while ((line = buffer.readLine())!= null) {
+
+			while ((line = buffer.readLine()) != null) {
 				String[] s = line.split(",");
-				Club e = new Club(s[0],s[1], s[2], s[3]);
+				Club e = new Club(s[0], s[1], s[2], s[3]);
 				clubs.add(e);
-				
+
 			}
 			buffer.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
-	
-	//Ordenamiento
+
+	// Ordenamiento
 
 	public void generateClubListsInsertion() {
 		ArrayList<Club> n = getClubs();
 		int in;
 		for (int i = 0; i < n.size(); i++) {
 			System.out.println(n.get(i));
-		} 
+		}
 		System.out.println(n.size());
-        for (int i = 1 ; i < n.size() ; i++) {
-            Club aux = n.get(i);
-            in = i;  
-            while (in > 0 && n.get(in - 1).countOwners() > aux.countOwners()) {
-            	n.remove(in);
-            	n.add(in, n.get(in - 1));
-                --in;
-            }
-            n.remove(in);
-            n.add(in, aux);	
-        }
-        setClubs(n);
-        for (int i = 0; i < n.size(); i++) {
+		for (int i = 1; i < n.size(); i++) {
+			Club aux = n.get(i);
+			in = i;
+			while (in > 0 && n.get(in - 1).countOwners() > aux.countOwners()) {
+				n.remove(in);
+				n.add(in, n.get(in - 1));
+				--in;
+			}
+			n.remove(in);
+			n.add(in, aux);
+		}
+		setClubs(n);
+		for (int i = 0; i < n.size(); i++) {
 			System.out.println(n.get(i));
 		}
 	}
-	
+
 	public void sortById() {
 		ArrayList<Club> n = getClubs();
 		int in;
-		 
-        for (int i = 1 ; i < n.size() ; i++) {
-            Club aux = n.get(i);
-            in = i;  
-            
-            while (in > 0 && (n.get(in - 1).getId().compareTo(aux.getId()))>0) {
-            	n.remove(in);
-                n.add(in, n.get(in - 1));
-                --in;
-            }
-            n.remove(in);
-            n.add(in, aux);	
-        }
-        setClubs(n);
-        for (int i = 0; i < n.size(); i++) {
+
+		for (int i = 1; i < n.size(); i++) {
+			Club aux = n.get(i);
+			in = i;
+
+			while (in > 0 && (n.get(in - 1).getId().compareTo(aux.getId())) > 0) {
+				n.remove(in);
+				n.add(in, n.get(in - 1));
+				--in;
+			}
+			n.remove(in);
+			n.add(in, aux);
+		}
+		setClubs(n);
+		for (int i = 0; i < n.size(); i++) {
 			System.out.println(n.get(i));
 		}
 	}
-	
+
 	public void sortByName() {
 		ArrayList<Club> n = getClubs();
 		int in;
-		 
-        for (int i = 1 ; i < n.size() ; i++) {
-            Club aux = n.get(i);
-            in = i;  
-            
-            while (in > 0 && (n.get(in - 1).getName().compareToIgnoreCase(aux.getName()))>0) {
-            	n.remove(in);
-                n.add(in, n.get(in - 1));
-                --in;
-            }
-            n.remove(in);
-            n.add(in, aux);	
-        }
-        setClubs(n);
-        for (int i = 0; i < n.size(); i++) {
+
+		for (int i = 1; i < n.size(); i++) {
+			Club aux = n.get(i);
+			in = i;
+
+			while (in > 0 && (n.get(in - 1).getName().compareToIgnoreCase(aux.getName())) > 0) {
+				n.remove(in);
+				n.add(in, n.get(in - 1));
+				--in;
+			}
+			n.remove(in);
+			n.add(in, aux);
+		}
+		setClubs(n);
+		for (int i = 0; i < n.size(); i++) {
 			System.out.println(n.get(i));
 		}
 	}
-	
+
 	public void sortByPetType() {
 		ArrayList<Club> n = getClubs();
 		int in;
-		 
-        for (int i = 1 ; i < n.size() ; i++) {
-            Club aux = n.get(i);
-            in = i;  
-            
-            while (in > 0 && (n.get(in - 1).getId().compareToIgnoreCase(aux.getId()))>0) {
-            	n.remove(in);
-                n.add(in, n.get(in - 1));
-                --in;
-            }
-            n.remove(in);
-            n.add(in, aux);	
-        }
-        setClubs(n);
-        for (int i = 0; i < n.size(); i++) {
+
+		for (int i = 1; i < n.size(); i++) {
+			Club aux = n.get(i);
+			in = i;
+
+			while (in > 0 && (n.get(in - 1).getId().compareToIgnoreCase(aux.getId())) > 0) {
+				n.remove(in);
+				n.add(in, n.get(in - 1));
+				--in;
+			}
+			n.remove(in);
+			n.add(in, aux);
+		}
+		setClubs(n);
+		for (int i = 0; i < n.size(); i++) {
 			System.out.println(n.get(i));
 		}
 	}
+
+	public void sortOwnersBubble() {
+		for (int i = 0; i < clubs.size(); i++) {
+			clubs.get(i).sortOwnersBubble();
+		}
+	}
 	
+	public void sortOwnersBubbleId() {
+		for (int i = 0; i < clubs.size(); i++) {
+			clubs.get(i).sortOwnersBubbleId();
+		}
+	}
+	
+	public void sortOwnersBubbleName() {
+		for (int i = 0; i < clubs.size(); i++) {
+			clubs.get(i).sortOwnersBubbleName();
+		}
+	}
+	
+	public void sortOwnersBubbleMascotType() {
+		for (int i = 0; i < clubs.size(); i++) {
+			clubs.get(i).sortOwnersBubbleMascotType();
+		}
+	}
+	
+	
+	public void sortBySelectionId() {
+		for (int i = 0; i < clubs.size(); i++) {
+			clubs.get(i).sortBySelectionId();
+		}
+	}
+	
+	public void sortBySelectionName() {
+		for (int i = 0; i < clubs.size(); i++) {
+			clubs.get(i).sortBySelectionName();
+		}
+	}
+
+	public void sortBySelectionPetType() {
+		for (int i = 0; i < clubs.size(); i++) {
+			clubs.get(i).sortBySelectionPetType();
+		}
+	}
+
 }

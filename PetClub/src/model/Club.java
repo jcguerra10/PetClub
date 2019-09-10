@@ -162,5 +162,111 @@ public class Club implements Comparable<Club> {
 		int comp = getName().compareTo(o.getName());
 		return comp;
 	}
-
+	
+	public void sortOwnersBubble() {
+		System.out.println("Club "+getName());
+		ArrayList<Owner> p = getOwners();
+		Owner auxiliar;
+		for (int i = 2; i < p.size(); i++) {
+			for (int j = 0; j < p.size() - i; j++) {
+				if (p.get(j).counterPets() > p.get(j+1).counterPets()) {
+					auxiliar = p.get(j);
+					p.remove(j);
+					p.add(j, p.get(j+1));
+					System.out.println(p.get(j+1));
+					p.remove(j+1);
+					p.add(j+1, auxiliar);
+					System.out.println(auxiliar);
+				}
+			}
+		}
+		setOwners(p);
+		for (int i = 0; i < p.size(); i++) {
+			p.get(i);
+		}
+	}
+	
+	public void sortOwnersBubbleName() {
+		ArrayList<Owner> p = getOwners();
+		Owner auxiliar;
+		for (int i = 2; i < p.size(); i++) {
+			for (int j = 0; j < p.size() - i; j++) {
+				if ((p.get(j).getName().compareTo(p.get(j+1).getName())>0)) {
+					auxiliar = p.get(j);
+					p.remove(j);
+					p.add(j, p.get(j+1));
+					System.out.println(p.get(j+1));
+					p.remove(j+1);
+					p.add(j+1, auxiliar);
+					System.out.println(auxiliar);
+				}
+			}
+		}
+		setOwners(p);
+		for (int i = 0; i < p.size(); i++) {
+			p.get(i);
+		}
+	}
+	
+	public void sortOwnersBubbleId() {
+		ArrayList<Owner> p = getOwners();
+		Owner auxiliar;
+		for (int i = 2; i < p.size(); i++) {
+			for (int j = 0; j < p.size() - i; j++) {
+				if ((p.get(j).getId().compareTo(p.get(j+1).getId())>0)) {
+					auxiliar = p.get(j);
+					p.remove(j);
+					p.add(j, p.get(j+1));
+					System.out.println(p.get(j+1));
+					p.remove(j+1);
+					p.add(j+1, auxiliar);
+					System.out.println(auxiliar);
+				}
+			}
+		}
+		setOwners(p);
+		for (int i = 0; i < p.size(); i++) {
+			p.get(i);
+		}
+	}
+	
+	public void sortOwnersBubbleMascotType() {
+		ArrayList<Owner> p = getOwners();
+		Owner auxiliar;
+		for (int i = 2; i < p.size(); i++) {
+			for (int j = 0; j < p.size() - i; j++) {
+				if ((p.get(j).getPetType().compareTo(p.get(j+1).getPetType())>0)) {
+					auxiliar = p.get(j);
+					p.remove(j);
+					p.add(j, p.get(j+1));
+					System.out.println(p.get(j+1));
+					p.remove(j+1);
+					p.add(j+1, auxiliar);
+					System.out.println(auxiliar);
+				}
+			}
+		}
+		setOwners(p);
+		for (int i = 0; i < p.size(); i++) {
+			p.get(i);
+		}
+	}
+	
+	public void sortBySelectionId() {
+		for (int i = 0; i < owners.size(); i++) {
+			owners.get(i).sortBySelectionId();
+		}
+	}
+	
+	public void sortBySelectionName( ) {
+		for (int i = 0; i < owners.size(); i++) {
+			owners.get(i).sortBySelectionName();
+		}
+	}
+	
+	public void sortBySelectionPetType() {
+		for (int i = 0; i < owners.size(); i++) {
+			owners.get(i).sortBySelectionPetType();
+		}
+	}
 }

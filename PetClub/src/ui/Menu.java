@@ -59,6 +59,9 @@ public class Menu {
                 case (10):
                 	infoSis.sortByPetType();
                 break;	
+                case(11):
+                	infoSis.sortOwnersBubble();
+                break;
                 case (0):
                 	exit = true;
                 break;
@@ -194,15 +197,21 @@ public class Menu {
 	public static void msg() {
 		System.out.println("BIENVENIDO");
 		System.out.println("1. Agregar un nuevo Club");
-		System.out.println("2. Agregar un nuevo Duenio");
+		System.out.println("2. Agregar un nuevo Dueño");
 		System.out.println("3. Agregar una nueva Mascota");
 		System.out.println("4. Eliminar Club");
-		System.out.println("5. Eliminar Duenio");
+		System.out.println("5. Eliminar Dueño");
 		System.out.println("6. Eliminar Mascota");
 		System.out.println("7. Generar listas");
-		System.out.println("8. Ordenar por Id");
-		System.out.println("9. Ordenar por Nombre");
-		System.out.println("10. Ordenar por Tipo de mascota");
+		System.out.println("8. Ordenar Club por Id");
+		System.out.println("9. Ordenar Club por Nombre");
+		System.out.println("10. Ordenar Club por Tipo de mascota");
+		System.out.println("11. Ordenar Dueños por Id");
+		System.out.println("12. Ordenar Dueños por Nombre");
+		System.out.println("13. Ordenar Dueños por tipo mascota");
+		System.out.println("14. Ordenar Mascota por Id");
+		System.out.println("15. Ordenar Mascota por Nombre");
+		System.out.println();
 		
 	}
 

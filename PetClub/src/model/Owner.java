@@ -5,7 +5,7 @@ import java.util.*;
 
 import exceptions.NotFoundException;
 
-public class Owner implements Serializable, Comparable<Owner>{
+public class Owner implements Serializable, Comparable<Owner> {
 	private String id;
 
 	private String name;
@@ -15,7 +15,7 @@ public class Owner implements Serializable, Comparable<Owner>{
 	private String birthday;
 
 	private String petType;
-	
+
 	private ArrayList<Pet> pets;
 
 	public Owner(String id, String name, String lastName, String birthday, String petType) {
@@ -75,25 +75,25 @@ public class Owner implements Serializable, Comparable<Owner>{
 	public void setPets(ArrayList<Pet> pets) {
 		this.pets = pets;
 	}
-	
+
 	//
-	
+
 	public void petRegister(Pet newPet) {
 		pets.add(newPet);
 		try {
-			
+
 			ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream(
 					new File("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets" + getId() + ".txt")));
 
 			writeFile.writeObject(pets);
-			
+
 			writeFile.close();
-			
+
 		} catch (Exception e) {
 			System.out.println("ERROR: No se ha encontrado Archivo");
 		}
 	}
-	
+
 	public void eliminatePet(String id) {
 		boolean exit = false;
 		for (int k = 0; k < pets.size() || !exit; k++) {
@@ -102,8 +102,8 @@ public class Owner implements Serializable, Comparable<Owner>{
 			try {
 				if (id.equals(pets.get(k).getName()) || id.equals(pets.get(k).getId())) {
 					pets.remove(k);
-					ObjectOutputStream writeFile = new ObjectOutputStream(
-					new FileOutputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets"+ getId()+".txt"));
+					ObjectOutputStream writeFile = new ObjectOutputStream(new FileOutputStream(
+							"D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets" + getId() + ".txt"));
 
 					writeFile.writeObject(pets);
 
@@ -113,60 +113,125 @@ public class Owner implements Serializable, Comparable<Owner>{
 					new NotFoundException().printStackTrace();
 				}
 			} catch (Exception e) {
-				
+
 			}
 		}
 	}
-	  
+
 	public String petList() {
 		String msg = "";
-		
+
 		for (int i = 0; i < pets.size(); i++) {
-			msg += i+") "+pets.get(i).getName();
+			msg += i + ") " + pets.get(i).getName();
 		}
-		
+
 		return msg;
-		
+
 	}
-	
+
 	public void importPets() {
 		try {
 			ArrayList<Pet> export = null;
-			ObjectInputStream exportFile = new ObjectInputStream(
-			new FileInputStream(new File("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets"+getId()+".txt")));
-			
+			ObjectInputStream exportFile = new ObjectInputStream(new FileInputStream(
+					new File("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/pets" + getId() + ".txt")));
+
 			ArrayList<Pet> readObject = (ArrayList<Pet>) exportFile.readObject();
 			export = readObject;
-			
+
 			for (int i = 0; i < export.size(); i++) {
 				pets.add(export.get(i));
 			}
-			
+
 			exportFile.close();
 
 		} catch (Exception e) {
-			
+
 		}
 	}
-	
-	public int counterPets() {		
+
+	public int counterPets() {
 		return pets.size();
 	}
 
 	@Override
 	public int compareTo(Owner o) {
 		int comp = 0;
-		if (counterPets()<o.counterPets()) {
+		if (counterPets() < o.counterPets()) {
 			comp = -1;
-		}else if (counterPets()>o.counterPets()) {
+		} else if (counterPets() > o.counterPets()) {
 			comp = 1;
-		}else if (counterPets() == o.counterPets()) {
+		} else if (counterPets() == o.counterPets()) {
 			comp = 0;
 		}
 		return comp;
 	}
-	
-	
-	
 
+	public void sortBySelectionId() {
+		ArrayList<Pet> p = getPets();
+		int i, j, pos;
+		Pet menor, tmp;
+		for (i = 0; i < p.size() - 1; i++) {
+			menor = p.get(i);
+			pos = i; 
+			for (j = i + 1; j < p.size(); j++) { 
+				if ((p.get(j).getId().compareTo(menor.getId())<0)) { 
+					menor = p.get(j);
+					pos = j;
+				}
+			}
+			if (pos != i) {
+				tmp = p.get(i);
+				p.remove(i);
+				p.add(i, p.get(pos));
+				p.remove(pos);
+				p.add(pos, tmp);
+			}
+		}
+	}
+	
+	public void sortBySelectionName() {
+		ArrayList<Pet> p = getPets();
+		int i, j, pos;
+		Pet menor, tmp;
+		for (i = 0; i < p.size() - 1; i++) {
+			menor = p.get(i);
+			pos = i; 
+			for (j = i + 1; j < p.size(); j++) { 
+				if ((p.get(j).getName().compareTo(menor.getName())<0)) { 
+					menor = p.get(j);
+					pos = j;
+				}
+			}
+			if (pos != i) {
+				tmp = p.get(i);
+				p.remove(i);
+				p.add(i, p.get(pos));
+				p.remove(pos);
+				p.add(pos, tmp);
+			}
+		}
+	}
+	
+	public void sortBySelectionPetType() {
+		ArrayList<Pet> p = getPets();
+		int i, j, pos;
+		Pet menor, tmp;
+		for (i = 0; i < p.size() - 1; i++) {
+			menor = p.get(i);
+			pos = i; 
+			for (j = i + 1; j < p.size(); j++) { 
+				if ((p.get(j).getPetType().compareTo(menor.getPetType())<0)) { 
+					menor = p.get(j);
+					pos = j;
+				}
+			}
+			if (pos != i) {
+				tmp = p.get(i);
+				p.remove(i);
+				p.add(i, p.get(pos));
+				p.remove(pos);
+				p.add(pos, tmp);
+			}
+		}
+	}
 }
