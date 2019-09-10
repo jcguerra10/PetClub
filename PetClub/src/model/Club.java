@@ -2,8 +2,11 @@ package model;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public class Club implements Comparable<Club> {
+import exceptions.RegistrationFail;
+
+public class Club implements Comparable<Club>, Comparator<Club> {
 	// ATTRIBUTES
 	private String id;
 
@@ -80,7 +83,12 @@ public class Club implements Comparable<Club> {
 
 	}
 
-	public void ownerRegister(Owner newOwner) {
+	public void ownerRegister(Owner newOwner) throws RegistrationFail {
+		for (int i = 0; i < owners.size(); i++) {
+			if (newOwner.getId().equals(owners.get(i).getId())) {
+				new RegistrationFail().printStackTrace();;
+			}
+		}
 		owners.add(newOwner);
 		try {
 
@@ -105,7 +113,11 @@ public class Club implements Comparable<Club> {
 	}
 
 	public void petRegister(Pet newPet, int indexOwner) {
-		owners.get(indexOwner).petRegister(newPet);
+		try {
+			owners.get(indexOwner).petRegister(newPet);
+		} catch (RegistrationFail e) {
+			
+		}
 	}
 
 	public void eliminateOwner(int owner) {
@@ -137,22 +149,22 @@ public class Club implements Comparable<Club> {
 		try {
 			ArrayList<Owner> export = null;
 			ObjectInputStream exportFile = new ObjectInputStream(
-			new FileInputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/owners" + getId() + ".txt"));
-			
+					new FileInputStream("D:/AAPROGRAMAS/apo2/LAB2/PetClub/PetClub/doc/owners" + getId() + ".txt"));
+
 			ArrayList<Owner> readObject = (ArrayList<Owner>) exportFile.readObject();
 			export = readObject;
-			
+
 			for (int i = 0; i < export.size(); i++) {
 				owners.add(export.get(i));
 			}
-			
+
 			exportFile.close();
 
 		} catch (Exception e) {
-			
+
 		}
 	}
-	
+
 	public int countOwners() {
 		return owners.size();
 	}
@@ -162,21 +174,21 @@ public class Club implements Comparable<Club> {
 		int comp = getName().compareTo(o.getName());
 		return comp;
 	}
-	
+
 	public void sortOwnersBubble() {
-		System.out.println("Club "+getName());
+		System.out.println("Club " + getName());
 		ArrayList<Owner> p = getOwners();
-		Owner auxiliar;
+		Owner aux;
 		for (int i = 2; i < p.size(); i++) {
 			for (int j = 0; j < p.size() - i; j++) {
-				if (p.get(j).counterPets() > p.get(j+1).counterPets()) {
-					auxiliar = p.get(j);
+				if (p.get(j).counterPets() > p.get(j + 1).counterPets()) {
+					aux = p.get(j);
 					p.remove(j);
-					p.add(j, p.get(j+1));
-					System.out.println(p.get(j+1));
-					p.remove(j+1);
-					p.add(j+1, auxiliar);
-					System.out.println(auxiliar);
+					p.add(j, p.get(j + 1));
+					System.out.println(p.get(j + 1));
+					p.remove(j + 1);
+					p.add(j + 1, aux);
+					System.out.println(aux);
 				}
 			}
 		}
@@ -185,20 +197,20 @@ public class Club implements Comparable<Club> {
 			p.get(i);
 		}
 	}
-	
+
 	public void sortOwnersBubbleName() {
 		ArrayList<Owner> p = getOwners();
-		Owner auxiliar;
+		Owner aux;
 		for (int i = 2; i < p.size(); i++) {
 			for (int j = 0; j < p.size() - i; j++) {
-				if ((p.get(j).getName().compareTo(p.get(j+1).getName())>0)) {
-					auxiliar = p.get(j);
+				if ((p.get(j).getName().compareTo(p.get(j + 1).getName()) > 0)) {
+					aux = p.get(j);
 					p.remove(j);
-					p.add(j, p.get(j+1));
-					System.out.println(p.get(j+1));
-					p.remove(j+1);
-					p.add(j+1, auxiliar);
-					System.out.println(auxiliar);
+					p.add(j, p.get(j + 1));
+					System.out.println(p.get(j + 1));
+					p.remove(j + 1);
+					p.add(j + 1, aux);
+					System.out.println(aux);
 				}
 			}
 		}
@@ -207,20 +219,20 @@ public class Club implements Comparable<Club> {
 			p.get(i);
 		}
 	}
-	
+
 	public void sortOwnersBubbleId() {
 		ArrayList<Owner> p = getOwners();
-		Owner auxiliar;
+		Owner aux;
 		for (int i = 2; i < p.size(); i++) {
 			for (int j = 0; j < p.size() - i; j++) {
-				if ((p.get(j).getId().compareTo(p.get(j+1).getId())>0)) {
-					auxiliar = p.get(j);
+				if ((p.get(j).getId().compareTo(p.get(j + 1).getId()) > 0)) {
+					aux = p.get(j);
 					p.remove(j);
-					p.add(j, p.get(j+1));
-					System.out.println(p.get(j+1));
-					p.remove(j+1);
-					p.add(j+1, auxiliar);
-					System.out.println(auxiliar);
+					p.add(j, p.get(j + 1));
+					System.out.println(p.get(j + 1));
+					p.remove(j + 1);
+					p.add(j + 1, aux);
+					System.out.println(aux);
 				}
 			}
 		}
@@ -229,20 +241,20 @@ public class Club implements Comparable<Club> {
 			p.get(i);
 		}
 	}
-	
+
 	public void sortOwnersBubbleMascotType() {
 		ArrayList<Owner> p = getOwners();
-		Owner auxiliar;
+		Owner aux;
 		for (int i = 2; i < p.size(); i++) {
 			for (int j = 0; j < p.size() - i; j++) {
-				if ((p.get(j).getPetType().compareTo(p.get(j+1).getPetType())>0)) {
-					auxiliar = p.get(j);
+				if ((p.get(j).getPetType().compareTo(p.get(j + 1).getPetType()) > 0)) {
+					aux = p.get(j);
 					p.remove(j);
-					p.add(j, p.get(j+1));
-					System.out.println(p.get(j+1));
-					p.remove(j+1);
-					p.add(j+1, auxiliar);
-					System.out.println(auxiliar);
+					p.add(j, p.get(j + 1));
+					System.out.println(p.get(j + 1));
+					p.remove(j + 1);
+					p.add(j + 1, aux);
+					System.out.println(aux);
 				}
 			}
 		}
@@ -251,22 +263,65 @@ public class Club implements Comparable<Club> {
 			p.get(i);
 		}
 	}
-	
+
 	public void sortBySelectionId() {
 		for (int i = 0; i < owners.size(); i++) {
 			owners.get(i).sortBySelectionId();
 		}
 	}
-	
-	public void sortBySelectionName( ) {
+
+	public void sortBySelectionName() {
 		for (int i = 0; i < owners.size(); i++) {
 			owners.get(i).sortBySelectionName();
 		}
 	}
-	
+
 	public void sortBySelectionPetType() {
 		for (int i = 0; i < owners.size(); i++) {
 			owners.get(i).sortBySelectionPetType();
 		}
+	}
+
+	public int binarySearchName(Owner c) {
+		sortBySelectionName();
+		int position = -1;
+		int start = 0;
+		int last = owners.size();
+
+		while (start <= last && position == -1) {
+			int mid = (start + last) / 2;
+			Owner half = owners.get(mid);
+			if (half.compare(half, c) == 0) {
+				position = mid;
+			} else if (half.compare(half, c) > 0) {
+				last = mid - 1;
+			} else if (half.compare(half, c) < 0) {
+				start = mid + 1;
+			}
+
+		}
+
+		return position;
+	}
+
+	public int regularSearchName(Owner c) {
+		int position = 0;
+		boolean exit = false;
+
+		for (int i = 0; i < owners.size() || !exit; i++) {
+			if (c.compare(c, owners.get(i)) == 0) {
+				position = i;
+				exit = true;
+			}
+		}
+		if (exit == false) {
+			position = -1;
+		}
+		return position;
+	}
+
+	@Override
+	public int compare(Club arg0, Club arg1) {
+		return arg0.getName().compareToIgnoreCase(arg1.getName());
 	}
 }

@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 import exceptions.NotFoundException;
+import exceptions.RegistrationFail;
 
 public class InfoClubs {
 
@@ -17,7 +18,12 @@ public class InfoClubs {
 		importFiles();
 	}
 
-	public void clubRegister(Club newClub) {
+	public void clubRegister(Club newClub) throws RegistrationFail{
+		for (int i = 0; i < clubs.size(); i++) {
+			if (newClub.getId().equals(clubs.get(i).getId())) {
+				new RegistrationFail().printStackTrace();;
+			}
+		}
 		clubs.add(newClub);
 		try {
 			FileWriter entry = new FileWriter(dir);
@@ -40,7 +46,11 @@ public class InfoClubs {
 	}
 
 	public void ownerRegister(int club, Owner newOwner) {
-		clubs.get(club).ownerRegister(newOwner);
+		try {
+			clubs.get(club).ownerRegister(newOwner);
+		} catch (RegistrationFail e) {
+
+		}
 	}
 
 	public void petRegister(int indexClub, Pet newPet, int indexOwner) {
@@ -95,8 +105,7 @@ public class InfoClubs {
 	public String getListClubs() {
 		String msg = "";
 		for (int i = 0; i < clubs.size(); i++) {
-//			msg += i + ") " + clubs.get(i).getName() + "\n";
-			msg += clubs.get(i) + "\n";
+			msg += i + ") " + clubs.get(i).getName() + "\n";
 		}
 		return msg;
 	}
@@ -262,6 +271,44 @@ public class InfoClubs {
 		for (int i = 0; i < clubs.size(); i++) {
 			clubs.get(i).sortBySelectionPetType();
 		}
+	}
+	
+	public int binarySearchNameClub(Club c) {
+		sortBySelectionName();
+		int position = -1;
+		int start = 0;
+		int last = clubs.size();
+
+		while (start <= last && position == -1) {
+			int mid = (start + last) / 2;
+			Club half = clubs.get(mid);
+			if (half.compare(half, c) == 0) {
+				position = mid;
+			} else if (half.compare(half, c) > 0) {
+				last = mid - 1;
+			} else if (half.compare(half, c) < 0) {
+				start = mid + 1;
+			}
+
+		}
+
+		return position;
+	}
+	
+	public int regularSearchNameClub(Club c) {
+		int position = 0;
+		boolean exit = false;
+		
+		for (int i = 0; i < clubs.size() || !exit; i++) {
+			if (c.compare(c, clubs.get(i)) == 0) {
+				position = i;
+				exit = true;
+			}
+		}
+		if (exit == false) {
+			position = -1;
+		}
+		return position;
 	}
 
 }

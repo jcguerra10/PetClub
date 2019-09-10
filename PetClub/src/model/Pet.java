@@ -1,8 +1,9 @@
 package model;
 
 import java.io.Serializable;
+import java.util.Comparator;
 
-public class Pet implements Serializable {
+public class Pet implements Serializable, Comparator<Pet> {
 
 	private String id;
 
@@ -61,6 +62,11 @@ public class Pet implements Serializable {
 
 	public void setPetType(String petType) {
 		this.petType = petType;
+	}
+
+	@Override
+	public int compare(Pet o1, Pet o2) {		
+		return o1.getName().compareTo(o2.getName());
 	}
 
 }

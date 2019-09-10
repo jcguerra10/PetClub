@@ -3,6 +3,7 @@ package ui;
 import java.util.Scanner;
 
 import exceptions.NotFoundException;
+import exceptions.RegistrationFail;
 import model.*;
 
 public class Menu {
@@ -62,11 +63,21 @@ public class Menu {
                 case(11):
                 	infoSis.sortOwnersBubble();
                 break;
+                case (12):
+                	binarySearchNameC();
                 case (0):
                 	exit = true;
                 break;
             }
         }
+	}
+
+	private static void binarySearchNameC() {
+		System.out.println("Digite el nombre: ");
+		String bName = scanStr.nextLine();
+		Club search = new Club(null, bName, null, null);
+		infoSis.binarySearchNameClub(search);
+		
 	}
 
 	private static void clubSortById() {
@@ -107,7 +118,11 @@ public class Menu {
 
 		Club newClub = new Club(newId, newName, newDate, newMascotType);
 
-		infoSis.clubRegister(newClub);
+		try {
+			infoSis.clubRegister(newClub);
+		} catch (RegistrationFail e) {
+
+		}
 
 	}
 
@@ -211,8 +226,13 @@ public class Menu {
 		System.out.println("13. Ordenar Dueños por tipo mascota");
 		System.out.println("14. Ordenar Mascota por Id");
 		System.out.println("15. Ordenar Mascota por Nombre");
-		System.out.println();
-		
+		System.out.println("16. Ordenar Mascota por Tipo de mascota");
+		System.out.println("17. Busqueda Binaria Club");
+		System.out.println("18. Busqueda Tradicional Club");
+		System.out.println("19. Busqueda Binaria Dueño");
+		System.out.println("20. Busqueda Tradicional Dueño");
+		System.out.println("21. Busqueda Binaria Animal");
+		System.out.println("22. Busqueda Tradicional Animal");
 	}
 
 }

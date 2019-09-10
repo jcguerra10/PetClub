@@ -4,8 +4,9 @@ import java.io.*;
 import java.util.*;
 
 import exceptions.NotFoundException;
+import exceptions.RegistrationFail;
 
-public class Owner implements Serializable, Comparable<Owner> {
+public class Owner implements Serializable, Comparable<Owner>, Comparator<Owner>{
 	private String id;
 
 	private String name;
@@ -78,7 +79,12 @@ public class Owner implements Serializable, Comparable<Owner> {
 
 	//
 
-	public void petRegister(Pet newPet) {
+	public void petRegister(Pet newPet) throws RegistrationFail {
+		for (int i = 0; i < pets.size(); i++) {
+			if (newPet.getId().equals(pets.get(i).getId())) {
+				new RegistrationFail().printStackTrace();;
+			}
+		}
 		pets.add(newPet);
 		try {
 
@@ -233,5 +239,48 @@ public class Owner implements Serializable, Comparable<Owner> {
 				p.add(pos, tmp);
 			}
 		}
+	}
+	
+	public int binarySearchNamePet(Pet c) {
+		sortBySelectionName();
+		int position = -1;
+		int start = 0;
+		int last = pets.size();
+
+		while (start <= last && position == -1) {
+			int mid = (start + last) / 2;
+			Pet half = pets.get(mid);
+			if (half.compare(half, c) == 0) {
+				position = mid;
+			} else if (half.compare(half, c) > 0) {
+				last = mid - 1;
+			} else if (half.compare(half, c) < 0) {
+				start = mid + 1;
+			}
+
+		}
+
+		return position;
+	}
+	
+	public int regularSearchNamePet(Pet c) {
+		int position = 0;
+		boolean exit = false;
+		
+		for (int i = 0; i < pets.size() || !exit; i++) {
+			if (c.compare(c, pets.get(i)) == 0) {
+				position = i;
+				exit = true;
+			}
+		}
+		if (exit == false) {
+			position = -1;
+		}
+		return position;
+	}
+
+	@Override
+	public int compare(Owner o1, Owner o2) {
+		return o1.getName().compareTo(o2.getName());
 	}
 }
