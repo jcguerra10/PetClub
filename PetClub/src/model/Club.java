@@ -79,9 +79,6 @@ public class Club implements Comparable<Club>, Comparator<Club> {
 
 	// METHODS
 
-	public void generateListOwners() {
-
-	}
 
 	public void ownerRegister(Owner newOwner) throws RegistrationFail {
 		for (int i = 0; i < owners.size(); i++) {

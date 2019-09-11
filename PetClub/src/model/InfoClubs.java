@@ -9,7 +9,8 @@ import exceptions.RegistrationFail;
 public class InfoClubs {
 
 	public static String dir = "D:\\AAPROGRAMAS\\apo2\\LAB2\\PetClub\\PetClub\\doc\\clubs.txt";
-
+	public static String dirC = "D:\\AAPROGRAMAS\\apo2\\LAB2\\PetClub\\PetClub\\doc\\Data.csv";
+	
 	private ArrayList<Club> clubs;
 
 	public InfoClubs() {
@@ -18,15 +19,16 @@ public class InfoClubs {
 		importFiles();
 	}
 
-	public void clubRegister(Club newClub) throws RegistrationFail{
+	public void clubRegister(Club newClub) throws RegistrationFail {
 		for (int i = 0; i < clubs.size(); i++) {
 			if (newClub.getId().equals(clubs.get(i).getId())) {
-				new RegistrationFail().printStackTrace();;
+				new RegistrationFail().printStackTrace();
+				;
 			}
-		}
-		clubs.add(newClub);
+			}
+			clubs.add(newClub);
 		try {
-			FileWriter entry = new FileWriter(dir);
+			FileWriter entry = new FileWriter(dirC);
 
 			BufferedWriter bufferW = new BufferedWriter(entry);
 
@@ -65,7 +67,7 @@ public class InfoClubs {
 			try {
 				if (identification.equals(clubs.get(k).getName()) || identification.equals(clubs.get(k).getId())) {
 					clubs.remove(k);
-					FileWriter entry = new FileWriter(dir);
+					FileWriter entry = new FileWriter(dirC);
 
 					BufferedWriter bufferW = new BufferedWriter(entry);
 
@@ -119,7 +121,7 @@ public class InfoClubs {
 	}
 
 	public void importFiles() {
-		File file = new File(dir);
+		File file = new File(dirC);
 		try {
 			BufferedReader buffer = new BufferedReader(new FileReader(file));
 			String line = "";
@@ -216,7 +218,7 @@ public class InfoClubs {
 			Club aux = n.get(i);
 			in = i;
 
-			while (in > 0 && (n.get(in - 1).getId().compareToIgnoreCase(aux.getId())) > 0) {
+			while (in > 0 && (n.get(in - 1).getMascotType().compareToIgnoreCase(aux.getMascotType())) > 0) {
 				n.remove(in);
 				n.add(in, n.get(in - 1));
 				--in;
@@ -235,32 +237,31 @@ public class InfoClubs {
 			clubs.get(i).sortOwnersBubble();
 		}
 	}
-	
+
 	public void sortOwnersBubbleId() {
 		for (int i = 0; i < clubs.size(); i++) {
 			clubs.get(i).sortOwnersBubbleId();
 		}
 	}
-	
+
 	public void sortOwnersBubbleName() {
 		for (int i = 0; i < clubs.size(); i++) {
 			clubs.get(i).sortOwnersBubbleName();
 		}
 	}
-	
+
 	public void sortOwnersBubbleMascotType() {
 		for (int i = 0; i < clubs.size(); i++) {
 			clubs.get(i).sortOwnersBubbleMascotType();
 		}
 	}
-	
-	
+
 	public void sortBySelectionId() {
 		for (int i = 0; i < clubs.size(); i++) {
 			clubs.get(i).sortBySelectionId();
 		}
 	}
-	
+
 	public void sortBySelectionName() {
 		for (int i = 0; i < clubs.size(); i++) {
 			clubs.get(i).sortBySelectionName();
@@ -272,7 +273,7 @@ public class InfoClubs {
 			clubs.get(i).sortBySelectionPetType();
 		}
 	}
-	
+
 	public int binarySearchNameClub(Club c) {
 		sortBySelectionName();
 		int position = -1;
@@ -294,11 +295,11 @@ public class InfoClubs {
 
 		return position;
 	}
-	
+
 	public int regularSearchNameClub(Club c) {
 		int position = 0;
 		boolean exit = false;
-		
+
 		for (int i = 0; i < clubs.size() || !exit; i++) {
 			if (c.compare(c, clubs.get(i)) == 0) {
 				position = i;
