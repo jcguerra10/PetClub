@@ -311,5 +311,40 @@ public class InfoClubs {
 		}
 		return position;
 	}
+	
+	public int binarySearchNameOwner(Owner o) {
+		int position = 0;
+		boolean exit = false;
+		for (int i = 0; i < clubs.size() || !exit; i++) {
+			position = clubs.get(i).binarySearchName(o);
+		}
+		
+		return position;
+	}
+	
+	public int regularSearchNameOwner(Owner o) {
+		int position = 0;
+		boolean exit = false;
+		for (int i = 0; i < clubs.size() || !exit; i++) {	
+			if (clubs.get(i).regularSearchName(o) != -1) {
+				position = clubs.get(i).regularSearchName(o);
+				exit = true;
+			}
 
+		}	
+		return position;	
+	}
+
+	public int binarySearchNamePet(Pet o) {
+		int position = 0;
+		boolean exit = false;
+		for (int i = 0; i < clubs.size() || !exit; i++) {
+			if (clubs.get(i).binarySearchPet(o) != -1) {
+				position = clubs.get(i).binarySearchPet(o);
+				exit = true;
+			}
+			
+		}	
+		return position;	
+	}
 }

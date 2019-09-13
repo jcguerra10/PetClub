@@ -316,6 +316,18 @@ public class Club implements Comparable<Club>, Comparator<Club> {
 		}
 		return position;
 	}
+	
+	public int binarySearchPet(Pet p) {
+		int position = 0;
+		boolean exit = false;
+		for (int i = 0; i < owners.size() || !exit; i++) {
+			if (owners.get(i).binarySearchNamePet(p) != -1) {
+				position = owners.get(i).binarySearchNamePet(p);
+				exit = true;
+			}			
+		}
+		return 0;
+	}
 
 	@Override
 	public int compare(Club arg0, Club arg1) {

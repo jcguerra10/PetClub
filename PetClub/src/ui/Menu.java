@@ -61,10 +61,37 @@ public class Menu {
                 	infoSis.sortByPetType();
                 break;	
                 case(11):
-                	infoSis.sortOwnersBubble();
+                	infoSis.sortOwnersBubbleId();
                 break;
                 case (12):
+                	infoSis.sortOwnersBubbleName();
+                break;
+                case (13):
+                	infoSis.sortOwnersBubbleMascotType();
+                break;
+                case (14):
+                	infoSis.sortById();         
+                break;
+                case (15):
+                	infoSis.sortByName();                
+                break;
+                case (16):
+                	infoSis.sortByPetType();
+                break;
+                case (17):
                 	binarySearchNameC();
+                break;
+                case (18):
+                	traditionalSearchC();
+                break;
+                case (19):
+                	binarySearchNameO();
+                break;	
+                case (20):
+                	traditionalSearchNameO();
+                case(21):
+                	binarySearchNameM();
+                break;
                 case (0):
                 	exit = true;
                 break;
@@ -72,11 +99,44 @@ public class Menu {
         }
 	}
 
+	
+	private static void binarySearchNameM() {
+		System.out.println("Digite el nombre: ");
+		String bName = scanStr.nextLine();
+		Pet search = new Pet(null, bName, null, null, null);
+		infoSis.binarySearchNamePet(search);
+	}
+
+
+	private static void traditionalSearchNameO() {
+		System.out.println("Digite el nombre: ");
+		String bName = scanStr.nextLine();
+		Owner search = new Owner(null, bName, null, null, null);
+		infoSis.regularSearchNameOwner(search);
+	} 
+
+
+	private static void binarySearchNameO() {
+		System.out.println("Digite el nombre: ");
+		String bName = scanStr.nextLine();
+		Owner search = new Owner(null, bName, null, null, null);
+		infoSis.binarySearchNameOwner(search);
+	}
+
+
 	private static void binarySearchNameC() {
 		System.out.println("Digite el nombre: ");
 		String bName = scanStr.nextLine();
 		Club search = new Club(null, bName, null, null);
 		infoSis.binarySearchNameClub(search);
+		
+	}
+	
+	private static void traditionalSearchC() {
+		System.out.println("Digite el nombre: ");
+		String bName = scanStr.nextLine();
+		Club search = new Club(null, bName, null, null);
+		infoSis.regularSearchNameClub(search);
 		
 	}
 
